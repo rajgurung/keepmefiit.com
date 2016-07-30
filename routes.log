@@ -1,0 +1,33 @@
+                  Prefix Verb   URI Pattern                    Controller#Action
+              categories GET    /categories(.:format)          categories#index
+                         POST   /categories(.:format)          categories#create
+            new_category GET    /categories/new(.:format)      categories#new
+           edit_category GET    /categories/:id/edit(.:format) categories#edit
+                category GET    /categories/:id(.:format)      categories#show
+                         PATCH  /categories/:id(.:format)      categories#update
+                         PUT    /categories/:id(.:format)      categories#update
+                         DELETE /categories/:id(.:format)      categories#destroy
+        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
+            user_session POST   /users/sign_in(.:format)       devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
+           user_password POST   /users/password(.:format)      devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
+                         PATCH  /users/password(.:format)      devise/passwords#update
+                         PUT    /users/password(.:format)      devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
+       user_registration POST   /users(.:format)               devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
+                         PATCH  /users(.:format)               devise/registrations#update
+                         PUT    /users(.:format)               devise/registrations#update
+                         DELETE /users(.:format)               devise/registrations#destroy
+                    root GET    /                              todos#index
+                   todos GET    /todos(.:format)               todos#index
+                         POST   /todos(.:format)               todos#create
+                new_todo GET    /todos/new(.:format)           todos#new
+               edit_todo GET    /todos/:id/edit(.:format)      todos#edit
+                    todo GET    /todos/:id(.:format)           todos#show
+                         PATCH  /todos/:id(.:format)           todos#update
+                         PUT    /todos/:id(.:format)           todos#update
+                         DELETE /todos/:id(.:format)           todos#destroy

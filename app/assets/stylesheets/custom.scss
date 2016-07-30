@@ -1,0 +1,64 @@
+
+
+@font-face {  
+    font-family: "Kaushan Script Regular";
+    src: url(/assets/KaushanScript-Regular.otf) format("truetype"); 
+} 
+ 
+.navbar-inverse .navbar-brand {
+	color: #ffffff
+}
+
+.navbar-brand.custom {
+	font-family: "Kaushan Script Regular","Helvetica Neue",Helvetica,Arial,cursive;
+	font-size: 25px;
+}
+
+.link-size {
+	font-size: 14px;
+}
+
+.float_left {
+	float: left;
+}
+
+.post_by {
+	margin-top:3px; margin-left:6px;
+}
+
+.post_content {	
+	margin-top: 75px; margin-left: 0px;
+}
+
+section {
+	margin-bottom: 50px
+}
+// a:link {
+//     color: #ffffff;
+// }
+
+// a:visited {
+// 	color: #ffffff;
+// }
+
+// /* mouse over link */
+// a:hover {
+//     color: #ffffff;
+// }
+
+// /* selected link */
+// a:active {
+//     color: #ffffff;
+// }
+
+// .navbar-inverse .navbar-nav > li > a {
+//     color: #ffffff;
+// }
+
+// a:link {color:#101010;}      /* unvisited link */
+// a:visited {color:#101010;}  /* visited link */
+h3 a:link {color: #101010; font-size:x-large; font-family: "Kaushan Script Regular" }
+h3 a:hover {color:#CE2323; font-size:x-large; font-family: "Kaushan Script Regular"; background-color:transparent; }  /* mouse over link */
+h3 a:active {color:#CE2323;}  /* selected link */
+
+
