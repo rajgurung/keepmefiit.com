@@ -48,6 +48,13 @@
           <li> <%= link_to 'CATEGORY', categories_path, class: "link-size", style: "color: #ffffff" %> </li>  
           <li> <%= link_to 'BLOG', posts_path, class: "link-size", style: "color: #ffffff" %> </li>         
           <!-- <li><a href="#contact">Contact</a></li> -->
+          <% if user_signed_in? %> <!--class="glyphicon glyphicon-log-out" -->
+          <li><%= link_to 'SIGN OUT', destroy_user_session_path, :method => :delete, class: "link-size", style: "color: #ffffff" %> </li>
+          <% else %>
+          <li><%#= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
+          <li><%= link_to "SIGN IN", new_user_session_path, class: "link-size", style: "color: #ffffff" %></li>
+          <li><%= link_to "SIGN UP", new_user_registration_path, class: "link-size", style: "color: #ffffff" %></li>
+        <% end %>
         </ul>
       </div>
     </div>

@@ -17,3 +17,11 @@
 /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+p {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 22px;
+}

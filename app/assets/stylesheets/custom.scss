@@ -23,10 +23,16 @@
 }
 
 .post_by {
-	margin-top:3px; margin-left:6px;
+	font-family: "Open Sans", helvetica, arial, sans-serif;
+	color: #9f9f9f;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+	margin-top:7px; margin-left:8px;
 }
 
 .post_content {	
+	font-family: "Open Sans", helvetica, arial, sans-serif;
 	margin-top: 75px; margin-left: 0px;
 }
 
@@ -57,8 +63,14 @@ section {
 
 // a:link {color:#101010;}      /* unvisited link */
 // a:visited {color:#101010;}  /* visited link */
-h3 a:link {color: #101010; font-size:x-large; font-family: "Kaushan Script Regular" }
+h3 a:link {color:#101010; font-size:x-large; font-family: "Kaushan Script Regular" }
+h3 a:visited {color:#101010}
 h3 a:hover {color:#CE2323; font-size:x-large; font-family: "Kaushan Script Regular"; background-color:transparent; }  /* mouse over link */
 h3 a:active {color:#CE2323;}  /* selected link */
 
-
+// p {
+// 	font-family: 'Open Sans', sans-serif;	
+// 	font-size: 17px;
+//     line-height: 26px;
+//     margin-bottom: 100px;
+// }
