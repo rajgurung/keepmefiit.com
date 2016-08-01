@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts =  Post.all.collect do |post|
+    @posts =  Post.all.order(created_at: :desc).collect do |post|
                 { 
                   id: post.id,
                   title: post[:title],
