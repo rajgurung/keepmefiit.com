@@ -69,6 +69,10 @@ gem 'record_tag_helper', '~> 1.0'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'coderay'
 
+# gem 'bundler', '~> 1.12', '>= 1.12.5'
+
+gem 'bundler', '~> 1.11', '>= 1.11.2'
+
 
 
 
