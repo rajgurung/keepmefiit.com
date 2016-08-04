@@ -218,6 +218,7 @@ DEPENDENCIES
   authority (= 3.1.0)
   autoprefixer-rails (~> 6.3, >= 6.3.7)
   bootstrap-generators (~> 3.3, >= 3.3.4)
+  bundler (~> 1.11, >= 1.11.2)
   byebug
   coderay
   coffee-rails (~> 4.2)
