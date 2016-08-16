@@ -1,12 +1,12 @@
-<div class="page-header">
-  <%= link_to new_category_path, class: 'btn btn-primary' do %>
+<!-- <div class="page-header">
+  <%#= link_to new_category_path, class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-plus"></span>
     New Category
-  <% end %>
+  <%# end %>
   <h1>Listing categories</h1>
 </div>
-
-<div class="table-responsive">
+ -->
+<!-- <div class="table-responsive">
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
@@ -19,13 +19,21 @@
     </thead>
 
     <tbody>
-      <%= content_tag_for(:tr, @categories) do |category| %>
-            <td><%= category.title %></td>
-            <td><%= category.notes %></td>
-            <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <% end %>
+      <%#= content_tag_for(:tr, @categories) do |category| %>
+            <td><%#= category.title %></td>
+            <td><%#= category.notes %></td>
+            <td><%#= link_to 'Show', category %></td>
+        <td><%#= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%#= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <%# end %>
     </tbody>
   </table>
-</div>
+</div> -->
+
+<div style="margin-top:15px" >
+  <div class="row">
+    <% @categories.each do |c| %>
+      <div class="col-sm-4"><h1><%= c.title %></h1></div>
+    <% end %>
+  </div>
+</div>  
