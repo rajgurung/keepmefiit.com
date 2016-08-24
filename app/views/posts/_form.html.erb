@@ -24,16 +24,19 @@
       <%= f.text_area :content, class: "form-control" %>
     </div>
   </div>
-  <div class="form-group">
-    <%= f.label :user, class: "col-sm-2 control-label" %>
+<!--   <div class="form-group">
+    <%#= f.label :user, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
-      <%= f.text_field :user, class: "form-control" %>
+      <%#= f.text_field :user, class: "form-control" %>
     </div>
-  </div>
+  </div> -->
   <div class="form-group">
-    <%= f.label :category, class: "col-sm-2 control-label" %>
+    <%= f.label :category_id, class: "col-sm-2 control-label" %>
+
+    <%#= f.label :category, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
-      <%= f.text_field :category, class: "form-control" %>
+      <%#= f.text_field :category, class: "form-control" %>
+      <%= f.collection_select(:category_id, Category.all, :id, :title, { prompt: true }, { class: "selectpicker"}) %>
     </div>
   </div>
   <div class="form-group">
