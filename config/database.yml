@@ -30,7 +30,7 @@ development:
   encoding: unicode
   database: blog
   pool: 5
-  username: god_raj
+  username: raj
   # password: password
 
 production:
@@ -38,7 +38,7 @@ production:
   encoding: unicode
   database: blog
   pool: 5
-  username: god_raj
+  username: raj
   # password: password
 
 test:
@@ -46,5 +46,5 @@ test:
   encoding: unicode
   database: blog_test
   pool: 5
-  username: god_raj
+  username: raj
   # password: password
