@@ -20,7 +20,18 @@
         </div> 
         <div class="post_content">
           <p> <%= post[:content] %> </p>
-        </div>          
+        </div> 
+        <div>
+          <span>
+            <%= image_tag("green-heart.png", class: "img-circle", size: "20x20") %> 
+            <span class="complementary">1 k</span> 
+          </span> 
+
+          <span class="twelve_left_margin">
+            <%= image_tag("blue-pulse.png", class: "img-circle", size: "30x20") %> 
+            <span class="complementary">7 k</span> 
+          </span> 
+        </div>              
       </section>
     <% end %>  
   </div>
