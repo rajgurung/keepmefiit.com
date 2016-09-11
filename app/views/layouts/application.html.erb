@@ -34,31 +34,29 @@
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <!-- <div class="navbar-header"> -->
+<!--         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+        </button> -->
         <%= link_to "Keepmefiit", posts_path, class: "navbar-brand custom", style: "color: #ffffff" %>
         <span style="color:white;font-size:9px;text-decoration:italic;">ALPHA</span>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- <li class="active"><a href="#">Home</a></li> -->
-          <!-- <li> <%#= link_to 'CATEGORY', categories_path, class: "link-size", style: "color: #ffffff" %> </li>   -->
-          <li> <%= link_to 'BLOG', posts_path, class: "link-size", style: "color: #ffffff" %> </li>         
-          <!-- <li><a href="#contact">Contact</a></li> -->
-          <% if user_signed_in? %> <!--class="glyphicon glyphicon-log-out" -->
-          <li><%= link_to 'SIGN OUT', destroy_user_session_path, :method => :delete, class: "link-size", style: "color: #ffffff" %> </li>
-          <% else %>
-          <li><%#= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
-          <li><%= link_to "SIGN IN", new_user_session_path, class: "link-size", style: "color: #ffffff" %></li>
-          <li><%= link_to "SIGN UP", new_user_registration_path, class: "link-size", style: "color: #ffffff" %></li>
-        <% end %>
-        </ul>
-      </div>
+      <!-- </div> -->
+      <!-- <div id="navbar" class="collapse navbar-collapse"> -->
+<!--         <ul class="nav navbar-nav navbar-right">
+          <li> <%#= link_to 'BLOG', posts_path, class: "link-size", style: "color: #ffffff" %> </li>                 
+          <%# if user_signed_in? %>
+          <li><%#= link_to 'SIGN OUT', destroy_user_session_path, :method => :delete, class: "link-size", style: "color: #ffffff" %> </li>
+          <%# else %>
+          <li><%#= link_to "SIGN IN", new_user_session_path, class: "link-size", style: "color: #ffffff" %></li>
+          <li><%#= link_to "SIGN UP", new_user_registration_path, class: "link-size", style: "color: #ffffff" %></li>
+        <%# end %>
+        </ul> -->
+
+        <span style="float:right; color:#ffffff;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <!-- </div> -->
     </div>
   </nav>
   <div class="container">
@@ -71,5 +69,30 @@
 
     <%= yield %>
   </div>
+
+
+
+  <div id="mySidenav" class="sidenav" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <%= link_to 'BLOG', posts_path, class: "link-size", style: "color: #ffffff" %>                 
+    <% if user_signed_in? %>
+      <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete, class: "link-size", style: "color: #ffffff" %>
+    <% else %>
+      <%= link_to "SIGN IN", new_user_session_path, class: "link-size", style: "color: #ffffff" %>
+      <%= link_to "SIGN UP", new_user_registration_path, class: "link-size", style: "color: #ffffff" %>
+    <% end %>  
+  </div>
+
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
 </body>
 </html>
