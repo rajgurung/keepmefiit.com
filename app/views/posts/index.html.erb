@@ -2,28 +2,33 @@
   <div class="row" >
     <% @posts.each do |post| %>
       <section>
-        <h3> <%= link_to post[:title], post_path(post[:id]) %> </h3>  
-        <div>  
-          <div class="float_left"> <%= image_tag("avatar.jpeg", class: "img-circle", size: "50x50") %> </div>
-          <div class="float_left"> 
-            <div class="post_by"><%= post[:email] %> </div>
-            <div class="post_by"><%= time_ago_in_words(post[:created_at]) %> </div>
-          </div>
-        </div> 
-        <div class="post_content">
-          <p> <%= post[:content] %> </p>
-        </div> 
-        <div>
-          <span>
-            <%= image_tag("green-heart.png", class: "img-circle", size: "20x20") %> 
-            <span class="complementary">1 k</span> 
-          </span> 
+        <div style="display: inline-block;">
+          <div class="arrow-up" style="background-color:gold;padding:8px;"></div>
+          <div style="background-color:grey">
+            <h3> <%= link_to post[:title], post_path(post[:id]) %> </h3>        
+            <div>  
+              <div class="float_left"> <%= image_tag("avatar.jpeg", class: "img-circle", size: "50x50") %> </div>
+              <div class="float_left"> 
+                <div class="post_by"><%= post[:email] %> </div>
+                <div class="post_by"><%= time_ago_in_words(post[:created_at]) %> </div>
+              </div>
+            </div> 
+            <div class="post_content">
+              <p> <%= post[:content] %> </p>
+            </div> 
+            <div>
+              <span>
+                <%= image_tag("green-heart.png", class: "img-circle", size: "20x20") %> 
+                <span class="complementary">1 k</span> 
+              </span> 
 
-          <span class="twelve_left_margin">
-            <%= image_tag("blue-pulse.png", class: "img-circle", size: "30x20") %> 
-            <span class="complementary">7 k</span> 
-          </span> 
-        </div>              
+              <span class="twelve_left_margin">
+                <%= image_tag("blue-pulse.png", class: "img-circle", size: "30x20") %> 
+                <span class="complementary">7 k</span> 
+              </span> 
+            </div>
+          </div>
+        </div>                  
       </section>
     <% end %>  
   </div>
