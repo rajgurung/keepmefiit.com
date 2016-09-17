@@ -2,33 +2,38 @@
   <div class="row" >
     <% @posts.each do |post| %>
       <section>
-        <div style="display: inline-block;">
-          <div class="arrow-up" style="background-color:gold;padding:8px;"></div>
-          <div style="background-color:grey">
-            <h3> <%= link_to post[:title], post_path(post[:id]) %> </h3>        
-            <div>  
-              <div class="float_left"> <%= image_tag("avatar.jpeg", class: "img-circle", size: "50x50") %> </div>
-              <div class="float_left"> 
-                <div class="post_by"><%= post[:email] %> </div>
-                <div class="post_by"><%= time_ago_in_words(post[:created_at]) %> </div>
-              </div>
-            </div> 
-            <div class="post_content">
-              <p> <%= post[:content] %> </p>
-            </div> 
-            <div>
-              <span>
-                <%= image_tag("green-heart.png", class: "img-circle", size: "20x20") %> 
-                <span class="complementary">1 k</span> 
-              </span> 
-
-              <span class="twelve_left_margin">
-                <%= image_tag("blue-pulse.png", class: "img-circle", size: "30x20") %> 
-                <span class="complementary">7 k</span> 
-              </span> 
-            </div>
+        <div class="row" style="background-color:green;"> <!-- 01. Top div -->
+          <div class="col-md-1" style="width:30px;">
+            <div class="arrow-up display_inline_block" style="background-color:gold;padding:8px;"></div>
           </div>
-        </div>                  
+          
+          <div class="col-md-11">  
+            <div  class="display_inline_block" style="background-color:grey">
+              <h3> <%= link_to post[:title], post_path(post[:id]) %> </h3>        
+              <div>  
+                <div class="float_left"> <%= image_tag("avatar.jpeg", class: "img-circle", size: "50x50") %> </div>
+                <div class="float_left"> 
+                  <div class="post_by"><%= post[:email] %> </div>
+                  <div class="post_by"><%= time_ago_in_words(post[:created_at]) %> </div>
+                </div>
+              </div> 
+              <div class="post_content">
+                <p> <%= post[:content] %> </p>
+              </div> 
+              <div>
+                <span>
+                  <%= image_tag("green-heart.png", class: "img-circle", size: "20x20") %> 
+                  <span class="complementary">1 k</span> 
+                </span> 
+
+                <span class="twelve_left_margin">
+                  <%= image_tag("blue-pulse.png", class: "img-circle", size: "30x20") %> 
+                  <span class="complementary">7 k</span> 
+                </span> 
+              </div>
+            </div>
+          </div>  
+        </div> <!-- 01. End div -->                  
       </section>
     <% end %>  
   </div>
