@@ -2,13 +2,14 @@
   <div class="row" >
     <% @posts.each do |post| %>
       <section>
-        <div class="row" style="background-color:green;"> <!-- 01. Top div -->
-          <div class="col-md-1" style="width:30px;">
-            <div class="arrow-up display_inline_block" style="background-color:gold;padding:8px;"></div>
+        <div class="row" style="background-color:none;"> <!-- 01. Top div -->
+          <div class="col-xs-2" style="width:44px;">
+            <!-- <div class="arrow-up display_inline_block" style="background-color:gold;padding:8px;"></div> -->
+            <div class="vote"></div>
           </div>
           
-          <div class="col-md-11">  
-            <div  class="display_inline_block" style="background-color:grey">
+          <div class="col-xs-10">  
+            <div  class="display_inline_block" style="background-color:none">
               <h3> <%= link_to post[:title], post_path(post[:id]) %> </h3>        
               <div>  
                 <div class="float_left"> <%= image_tag("avatar.jpeg", class: "img-circle", size: "50x50") %> </div>
@@ -38,3 +39,11 @@
     <% end %>  
   </div>
 </div>
+
+
+<script type="text/javascript">
+  $('.vote').click(function () {
+  $(this).toggleClass('on');
+});
+
+</script>
