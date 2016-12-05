@@ -28,23 +28,23 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog
+  database: <%= ENV["DB_NAME"] %>
   pool: 5
-  username: raj
+  username: <%= ENV["DB_USERNAME"] %>
   # password: password
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog
+  database: <%= ENV["DB_NAME"] %>
   pool: 5
-  username: raj
+  username: <%= ENV["DB_USERNAME"] %>
   # password: password
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_test
+  database: <%= ENV["DB_NAME"] %>
   pool: 5
-  username: raj
+  username: <%= ENV["DB_USERNAME"] %>
   # password: password
