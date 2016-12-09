@@ -75,7 +75,7 @@ gem 'bundler', '~> 1.11', '>= 1.11.2'
 
 gem 'bootstrap-select-rails', '~> 1.6', '>= 1.6.3'
 
-
+gem 'figaro'
 
 
 
