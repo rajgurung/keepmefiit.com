@@ -1,12 +1,177 @@
 <div class="page-header">
-  <h1>Dashboards#index</h1>
+  <!-- <h1>Dashboard</h1> -->
 </div>
-<p>Find me in app/views/dashboards/index.html.erb</p>
-
-https://www.google.co.uk/search?q=fitness+dashboard&client=ubuntu&hs=q2G&channel=fs&tbm=isch&imgil=9AG0a5yYTG6RnM%253A%253BqYl3W1rx2r9fnM%253Bhttps%25253A%25252F%25252Fdribbble.com%25252FBenzai%25252Fprojects%25252F202246-Fitness-dashboard&source=iu&pf=m&fir=9AG0a5yYTG6RnM%253A%252CqYl3W1rx2r9fnM%252C_&usg=__2XGkYpGzJ8mXC0RyFfvzVQKZj_8%3D&biw=1108&bih=813&ved=0ahUKEwjci-rWhPLQAhXJJcAKHcJYCJ4QyjcIRQ&ei=xV1QWJyVLcnLgAbCsaHwCQ#imgrc=ndDQpkZSWUBTZM%3A
+<!-- <p>Find me in app/views/dashboards/index.html.erb</p> -->
 
 
 
+<div class="row">
+	<div class="col-md-5" style="background-color:none">
+		<!-- <div class="col-md-12 wrapper_colour" style="padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"> 
+			<b>DAILY STATS</b> 
+		</div> -->
+
+		<div class="col-md-12 wrapper_colour">	
+			<div class="row" style="padding:2px 0 3px 0">		
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("sports.png", size: "60x60") %> 
+					<!-- <div class="center_footer_info"> STEPS</div> -->
+				</div>
+				<div class="col-xs-5 center_info"> 
+					5,108 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 10,000 steps</div>
+				</div>
+				<div class="col-xs-5 right_info"> 
+					60,000 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Average weekly steps</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 wrapper_colour top_margin">
+			<div class="row" style="padding:2px 0 4px 0">		
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("weight.png", size: "60x60") %> 
+					<!-- <div class="center_footer_info"> STEPS</div> -->
+				</div>
+				<div class="col-xs-5 center_info"> 
+					120 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 150 minutes of weight training</div>
+				</div>
+				<div class="col-xs-5 right_info"> 
+					70 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Average weekly training</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 wrapper_colour top_margin">
+			<div class="row" style="padding:2px 0 4px 0">		
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("running-1.png", size: "60x60") %> 
+					<!-- <div class="center_footer_info"> STEPS</div> -->
+				</div>
+				<div class="col-xs-5 center_info"> 
+					20 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 40 minutes of cardio </div>
+				</div>
+				<div class="col-xs-5 right_info"> 
+					30<!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Average weekly cardio</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 wrapper_colour top_margin">	
+			<div class="row" style="padding:2px 0 3px 0">		
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("bottle.png", size: "60x60") %> 
+					<!-- <div class="center_footer_info"> STEPS</div> -->
+				</div>
+				<div class="col-xs-5 center_info"> 
+					5,108 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 10,000 steps</div>
+				</div>
+				<div class="col-xs-5 right_info"> 
+					60,000 <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Average weekly steps</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4" style="background-color:none">
+		<div class="col-md-12 wrapper_colour">
+			<div class="row">
+				<div class="col-md-12" style="padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"> <!-- #d3d3d3 --> 
+					<b>NEWS FEED</b> 
+				</div>
+			</div>	
+		</div>	
+
+		<div class="col-md-12 wrapper_colour">
+			<div class="row">
+				<div class="col-md-12 wrapper_colour top_margin" style="padding:3px 0 8px 0"> 
+					<div class="col-xs-2 left_info"> 
+						<%= image_tag("avatar.png", size: "60x60") %> 
+					</div>
+					<div class="col-xs-8 news_feed_center_info"> 
+						Just completed my goal <!-- <span class="center_sub_info"> Steps </span> -->
+						<div class="center_footer_info"> Daily Goal of 10,000 steps</div>
+					</div>
+					<div class="col-xs-2 news_feed_right_info"> 
+						8/10
+					</div>
+				</div>
+			</div>	
+		</div>
+			
+		<div class="col-md-12 wrapper_colour">
+			<div class="row">			
+				<div class="col-md-12 wrapper_colour top_margin" style="padding:3px 0 8px 0"> 
+					<div class="col-xs-2 left_info"> 
+						<%= image_tag("avatar-7.png", size: "60x60") %> 
+					</div>
+					<div class="col-xs-8 news_feed_center_info"> 
+						Smashed the booty workout <!-- <span class="center_sub_info"> Steps </span> -->
+						<div class="center_footer_info"> Daily Goal of 60 minutes of weight training</div>
+					</div>
+					<div class="col-xs-2 news_feed_right_info"> 
+						10/10
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12 wrapper_colour">
+			<div class="row">		
+				<div class="col-md-12 wrapper_colour top_margin" style="padding:3px 0 8px 0"> 
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("avatar-9.png", size: "60x60") %> 
+				</div>
+				<div class="col-xs-8 news_feed_center_info"> 
+					Killed the gym session <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 20,000 steps</div>
+				</div>
+				<div class="col-xs-2 news_feed_right_info"> 
+					7/10
+				</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="col-md-12 wrapper_colour">
+			<div class="row">				
+				<div class="col-md-12 wrapper_colour top_margin" style="padding:3px 0 8px 0"> 
+				<div class="col-xs-2 left_info"> 
+					<%= image_tag("avatar-7.png", size: "60x60") %> 
+				</div>
+				<div class="col-xs-8 news_feed_center_info"> 
+					Smashed the booty workout <!-- <span class="center_sub_info"> Steps </span> -->
+					<div class="center_footer_info"> Daily Goal of 60 minutes of weight training </div>
+				</div>
+				<div class="col-xs-2 news_feed_right_info"> 
+					10/10
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-https://keen.io/blog/101269629091/charts-on-grids-responsive-dashboard-templates-with
+	<div class="col-md-3" style="background-color:none">
+			<div class="col-md-12" style="padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"> <!-- #d3d3d3 --> 
+				<b>NEWS FEED</b> 
+			</div>
+	</div>
+</div>
+
+
+<br> <br><br> <br><br> <br>
+<!-- https://www.google.co.uk/search?q=fitness+dashboard&client=ubuntu&hs=q2G&channel=fs&tbm=isch&imgil=9AG0a5yYTG6RnM%253A%253BqYl3W1rx2r9fnM%253Bhttps%25253A%25252F%25252Fdribbble.com%25252FBenzai%25252Fprojects%25252F202246-Fitness-dashboard&source=iu&pf=m&fir=9AG0a5yYTG6RnM%253A%252CqYl3W1rx2r9fnM%252C_&usg=__2XGkYpGzJ8mXC0RyFfvzVQKZj_8%3D&biw=1108&bih=813&ved=0ahUKEwjci-rWhPLQAhXJJcAKHcJYCJ4QyjcIRQ&ei=xV1QWJyVLcnLgAbCsaHwCQ#imgrc=ndDQpkZSWUBTZM%3A -->
+
+
+
+
+
+<!-- https://keen.io/blog/101269629091/charts-on-grids-responsive-dashboard-templates-with -->
