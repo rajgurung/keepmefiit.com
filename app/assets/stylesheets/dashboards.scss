@@ -1,0 +1,24 @@
+.wrapper_colour { background-color:#e6e6e6; }
+
+.top_margin { margin-top:8px; }
+
+.left_info { background-color:none;padding-top:5px; }
+
+.center_info { background-color:none;text-align:center;font-size:28px;padding-top:3px; }
+
+.center_sub_info { font-size:12px; }
+
+.center_footer_info { text-align:center;font-size:12px; }
+
+.right_info { background-color:none;text-align:center;font-size:28px;padding-top:3px }
+
+
+
+.news_feed_center_info { @extend .center_info;font-size:20px;padding-top:12px; }
+
+.news_feed_right_info { @extend .center_info;font-size:18px;padding-top:12px;text-align:left; }
+
+.leaderboard_center_footer_info { @extend .center_footer_info;text-align:center }
+
+.leaderboard_center_info { @extend .center_info;font-size:14px;padding-top:20px;}
+
