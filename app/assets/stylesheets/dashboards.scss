@@ -18,3 +18,7 @@
 
 .news_feed_right_info { @extend .center_info;font-size:18px;padding-top:12px;text-align:left; }
 
+.leaderboard_center_footer_info { @extend .center_footer_info;text-align:center }
+
+.leaderboard_center_info { @extend .center_info;font-size:14px;padding-top:20px;}
+
