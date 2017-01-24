@@ -1,4 +1,21 @@
                   Prefix Verb   URI Pattern                    Controller#Action
+              dashboards GET    /dashboards(.:format)          dashboards#index
+                   meals GET    /meals(.:format)               meals#index
+                         POST   /meals(.:format)               meals#create
+                new_meal GET    /meals/new(.:format)           meals#new
+               edit_meal GET    /meals/:id/edit(.:format)      meals#edit
+                    meal GET    /meals/:id(.:format)           meals#show
+                         PATCH  /meals/:id(.:format)           meals#update
+                         PUT    /meals/:id(.:format)           meals#update
+                         DELETE /meals/:id(.:format)           meals#destroy
+                   posts GET    /posts(.:format)               posts#index
+                         POST   /posts(.:format)               posts#create
+                new_post GET    /posts/new(.:format)           posts#new
+               edit_post GET    /posts/:id/edit(.:format)      posts#edit
+                    post GET    /posts/:id(.:format)           posts#show
+                         PATCH  /posts/:id(.:format)           posts#update
+                         PUT    /posts/:id(.:format)           posts#update
+                         DELETE /posts/:id(.:format)           posts#destroy
               categories GET    /categories(.:format)          categories#index
                          POST   /categories(.:format)          categories#create
             new_category GET    /categories/new(.:format)      categories#new
@@ -10,19 +27,18 @@
         new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
             user_session POST   /users/sign_in(.:format)       devise/sessions#create
     destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
-           user_password POST   /users/password(.:format)      devise/passwords#create
        new_user_password GET    /users/password/new(.:format)  devise/passwords#new
       edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
-                         PATCH  /users/password(.:format)      devise/passwords#update
+           user_password PATCH  /users/password(.:format)      devise/passwords#update
                          PUT    /users/password(.:format)      devise/passwords#update
+                         POST   /users/password(.:format)      devise/passwords#create
 cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
-       user_registration POST   /users(.:format)               devise/registrations#create
    new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
   edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
-                         PATCH  /users(.:format)               devise/registrations#update
+       user_registration PATCH  /users(.:format)               devise/registrations#update
                          PUT    /users(.:format)               devise/registrations#update
                          DELETE /users(.:format)               devise/registrations#destroy
-                    root GET    /                              todos#index
+                         POST   /users(.:format)               devise/registrations#create
                    todos GET    /todos(.:format)               todos#index
                          POST   /todos(.:format)               todos#create
                 new_todo GET    /todos/new(.:format)           todos#new
@@ -31,3 +47,4 @@ cancel_user_registration GET    /users/cancel(.:format)        devise/registrati
                          PATCH  /todos/:id(.:format)           todos#update
                          PUT    /todos/:id(.:format)           todos#update
                          DELETE /todos/:id(.:format)           todos#destroy
+                    root GET    /                              dashboards#index
