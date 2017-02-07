@@ -6,3 +6,5 @@
 - Connection
 - E-commerce
 - Online Magzine/subscription basis
+
+https://cloud.githubusercontent.com/assets/1138591/22692723/2ce5cf2e-ed38-11e6-9cd8-043ae4f8a75d.png
