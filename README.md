@@ -7,4 +7,4 @@
 - E-commerce
 - Online Magzine/subscription basis
 
-https://cloud.githubusercontent.com/assets/1138591/22692723/2ce5cf2e-ed38-11e6-9cd8-043ae4f8a75d.png
+![Alt Text](https://github.com/rajgurung/blog/blob/master/app/assets/images/Screen%20Shot%202017-02-07%20at%2013.17.51.png?raw=true)
