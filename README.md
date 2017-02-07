@@ -5,6 +5,6 @@
 - Omniauth
 - Connection
 - E-commerce
-- Online Magzine/subscription basis
+- Online Magazine/subscription basis
 
 ![Alt Text](https://github.com/rajgurung/blog/blob/master/app/assets/images/Screen%20Shot%202017-02-07%20at%2013.17.51.png?raw=true)
