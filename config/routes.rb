@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :user_workouts
+  resources :workouts
   # get 'dashboards/index'
   get "/dashboards", to: "dashboards#index"
 

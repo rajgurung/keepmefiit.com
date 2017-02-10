@@ -1,0 +1,29 @@
+<div class="page-header">
+  <%= link_to user_workouts_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_user_workout_path(@user_workout), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show user_workout</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Set:</dt>
+  <dd><%= @user_workout.set %></dd>
+
+  <dt>Rep:</dt>
+  <dd><%= @user_workout.rep %></dd>
+
+  <dt>Weight:</dt>
+  <dd><%= @user_workout.weight %></dd>
+
+  <dt>Workout:</dt>
+  <dd><%= @user_workout.workout %></dd>
+
+  <dt>User:</dt>
+  <dd><%= @user_workout.user %></dd>
+
+</dl>
