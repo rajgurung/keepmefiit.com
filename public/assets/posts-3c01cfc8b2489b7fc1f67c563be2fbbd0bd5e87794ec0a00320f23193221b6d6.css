@@ -1,0 +1,16 @@
+/* line 1, /Users/raj/Documents/blog/app/assets/stylesheets/posts.scss */
+.vote {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  background: url("http://i.stack.imgur.com/iqN2k.png");
+  background-position: 0 -25px;
+}
+
+/* line 13, /Users/raj/Documents/blog/app/assets/stylesheets/posts.scss */
+.vote.on {
+  background-position: 0 2px;
+}
