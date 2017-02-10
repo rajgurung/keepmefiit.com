@@ -78,7 +78,8 @@
     <span class="custom white"> Keepmefiit </span>
     <span style="color:white;font-size:9px;text-decoration:italic;"><sup>ALPHA</sup></span><br><br>
 
-    <%= link_to 'BLOG', posts_path, class: "link-size", style: "color: #ffffff" %>                 
+    <%= link_to 'POST', posts_path, class: "link-size", style: "color: #ffffff" %>                 
+    <%= link_to 'DASHBOARD', dashboards_path, class: "link-size", style: "color: #ffffff" %>      
     <% if user_signed_in? %>
       <%= link_to "SIGN OUT", destroy_user_session_path, :method => :delete, class: "link-size", style: "color: #ffffff" %>
     <% else %>
