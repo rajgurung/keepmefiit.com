@@ -1,50 +1,75 @@
-                  Prefix Verb   URI Pattern                    Controller#Action
-              dashboards GET    /dashboards(.:format)          dashboards#index
-                   meals GET    /meals(.:format)               meals#index
-                         POST   /meals(.:format)               meals#create
-                new_meal GET    /meals/new(.:format)           meals#new
-               edit_meal GET    /meals/:id/edit(.:format)      meals#edit
-                    meal GET    /meals/:id(.:format)           meals#show
-                         PATCH  /meals/:id(.:format)           meals#update
-                         PUT    /meals/:id(.:format)           meals#update
-                         DELETE /meals/:id(.:format)           meals#destroy
-                   posts GET    /posts(.:format)               posts#index
-                         POST   /posts(.:format)               posts#create
-                new_post GET    /posts/new(.:format)           posts#new
-               edit_post GET    /posts/:id/edit(.:format)      posts#edit
-                    post GET    /posts/:id(.:format)           posts#show
-                         PATCH  /posts/:id(.:format)           posts#update
-                         PUT    /posts/:id(.:format)           posts#update
-                         DELETE /posts/:id(.:format)           posts#destroy
-              categories GET    /categories(.:format)          categories#index
-                         POST   /categories(.:format)          categories#create
-            new_category GET    /categories/new(.:format)      categories#new
-           edit_category GET    /categories/:id/edit(.:format) categories#edit
-                category GET    /categories/:id(.:format)      categories#show
-                         PATCH  /categories/:id(.:format)      categories#update
-                         PUT    /categories/:id(.:format)      categories#update
-                         DELETE /categories/:id(.:format)      categories#destroy
-        new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
-            user_session POST   /users/sign_in(.:format)       devise/sessions#create
-    destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
-       new_user_password GET    /users/password/new(.:format)  devise/passwords#new
-      edit_user_password GET    /users/password/edit(.:format) devise/passwords#edit
-           user_password PATCH  /users/password(.:format)      devise/passwords#update
-                         PUT    /users/password(.:format)      devise/passwords#update
-                         POST   /users/password(.:format)      devise/passwords#create
-cancel_user_registration GET    /users/cancel(.:format)        devise/registrations#cancel
-   new_user_registration GET    /users/sign_up(.:format)       devise/registrations#new
-  edit_user_registration GET    /users/edit(.:format)          devise/registrations#edit
-       user_registration PATCH  /users(.:format)               devise/registrations#update
-                         PUT    /users(.:format)               devise/registrations#update
-                         DELETE /users(.:format)               devise/registrations#destroy
-                         POST   /users(.:format)               devise/registrations#create
-                   todos GET    /todos(.:format)               todos#index
-                         POST   /todos(.:format)               todos#create
-                new_todo GET    /todos/new(.:format)           todos#new
-               edit_todo GET    /todos/:id/edit(.:format)      todos#edit
-                    todo GET    /todos/:id(.:format)           todos#show
-                         PATCH  /todos/:id(.:format)           todos#update
-                         PUT    /todos/:id(.:format)           todos#update
-                         DELETE /todos/:id(.:format)           todos#destroy
-                    root GET    /                              dashboards#index
+                      Prefix Verb   URI Pattern                             Controller#Action
+          workout_categories GET    /workout_categories(.:format)           workout_categories#index
+                             POST   /workout_categories(.:format)           workout_categories#create
+        new_workout_category GET    /workout_categories/new(.:format)       workout_categories#new
+       edit_workout_category GET    /workout_categories/:id/edit(.:format)  workout_categories#edit
+            workout_category GET    /workout_categories/:id(.:format)       workout_categories#show
+                             PATCH  /workout_categories/:id(.:format)       workout_categories#update
+                             PUT    /workout_categories/:id(.:format)       workout_categories#update
+                             DELETE /workout_categories/:id(.:format)       workout_categories#destroy
+search_workout_user_workouts GET    /user_workouts/search_workout(.:format) user_workouts#search_workout
+               user_workouts GET    /user_workouts(.:format)                user_workouts#index
+                             POST   /user_workouts(.:format)                user_workouts#create
+            new_user_workout GET    /user_workouts/new(.:format)            user_workouts#new
+           edit_user_workout GET    /user_workouts/:id/edit(.:format)       user_workouts#edit
+                user_workout GET    /user_workouts/:id(.:format)            user_workouts#show
+                             PATCH  /user_workouts/:id(.:format)            user_workouts#update
+                             PUT    /user_workouts/:id(.:format)            user_workouts#update
+                             DELETE /user_workouts/:id(.:format)            user_workouts#destroy
+                    workouts GET    /workouts(.:format)                     workouts#index
+                             POST   /workouts(.:format)                     workouts#create
+                 new_workout GET    /workouts/new(.:format)                 workouts#new
+                edit_workout GET    /workouts/:id/edit(.:format)            workouts#edit
+                     workout GET    /workouts/:id(.:format)                 workouts#show
+                             PATCH  /workouts/:id(.:format)                 workouts#update
+                             PUT    /workouts/:id(.:format)                 workouts#update
+                             DELETE /workouts/:id(.:format)                 workouts#destroy
+                  dashboards GET    /dashboards(.:format)                   dashboards#index
+                       meals GET    /meals(.:format)                        meals#index
+                             POST   /meals(.:format)                        meals#create
+                    new_meal GET    /meals/new(.:format)                    meals#new
+                   edit_meal GET    /meals/:id/edit(.:format)               meals#edit
+                        meal GET    /meals/:id(.:format)                    meals#show
+                             PATCH  /meals/:id(.:format)                    meals#update
+                             PUT    /meals/:id(.:format)                    meals#update
+                             DELETE /meals/:id(.:format)                    meals#destroy
+                       posts GET    /posts(.:format)                        posts#index
+                             POST   /posts(.:format)                        posts#create
+                    new_post GET    /posts/new(.:format)                    posts#new
+                   edit_post GET    /posts/:id/edit(.:format)               posts#edit
+                        post GET    /posts/:id(.:format)                    posts#show
+                             PATCH  /posts/:id(.:format)                    posts#update
+                             PUT    /posts/:id(.:format)                    posts#update
+                             DELETE /posts/:id(.:format)                    posts#destroy
+                  categories GET    /categories(.:format)                   categories#index
+                             POST   /categories(.:format)                   categories#create
+                new_category GET    /categories/new(.:format)               categories#new
+               edit_category GET    /categories/:id/edit(.:format)          categories#edit
+                    category GET    /categories/:id(.:format)               categories#show
+                             PATCH  /categories/:id(.:format)               categories#update
+                             PUT    /categories/:id(.:format)               categories#update
+                             DELETE /categories/:id(.:format)               categories#destroy
+            new_user_session GET    /users/sign_in(.:format)                devise/sessions#new
+                user_session POST   /users/sign_in(.:format)                devise/sessions#create
+        destroy_user_session DELETE /users/sign_out(.:format)               devise/sessions#destroy
+           new_user_password GET    /users/password/new(.:format)           devise/passwords#new
+          edit_user_password GET    /users/password/edit(.:format)          devise/passwords#edit
+               user_password PATCH  /users/password(.:format)               devise/passwords#update
+                             PUT    /users/password(.:format)               devise/passwords#update
+                             POST   /users/password(.:format)               devise/passwords#create
+    cancel_user_registration GET    /users/cancel(.:format)                 devise/registrations#cancel
+       new_user_registration GET    /users/sign_up(.:format)                devise/registrations#new
+      edit_user_registration GET    /users/edit(.:format)                   devise/registrations#edit
+           user_registration PATCH  /users(.:format)                        devise/registrations#update
+                             PUT    /users(.:format)                        devise/registrations#update
+                             DELETE /users(.:format)                        devise/registrations#destroy
+                             POST   /users(.:format)                        devise/registrations#create
+                       todos GET    /todos(.:format)                        todos#index
+                             POST   /todos(.:format)                        todos#create
+                    new_todo GET    /todos/new(.:format)                    todos#new
+                   edit_todo GET    /todos/:id/edit(.:format)               todos#edit
+                        todo GET    /todos/:id(.:format)                    todos#show
+                             PATCH  /todos/:id(.:format)                    todos#update
+                             PUT    /todos/:id(.:format)                    todos#update
+                             DELETE /todos/:id(.:format)                    todos#destroy
+                        root GET    /                                       dashboards#index

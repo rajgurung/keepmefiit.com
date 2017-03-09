@@ -61,6 +61,10 @@ class UserWorkoutsController < ApplicationController
     end
   end
 
+  def search_workout
+    Workout.where(" name in ?", params[:term])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_workout
