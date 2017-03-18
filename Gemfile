@@ -82,3 +82,5 @@ gem 'figaro'
 gem 'carrierwave', '~> 1.0'
 
 gem 'annotate'
+
+gem 'erb2haml', :group => :development

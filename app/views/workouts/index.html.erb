@@ -21,8 +21,8 @@
 
     <tbody>
       <%= content_tag_for(:tr, @workouts) do |workout| %>
-            <td><%= image_tag (workout.pictograms.first.url rescue 'no image'),
-                               :style => 'background-color: grey;padding:5px;margin: 0', size: '100x100' %></td>
+            <td class='thumbnail' style="padding:0;background-color:#333;text-align:center;margin: 0">
+              <%= image_tag (workout.pictograms.first.url rescue 'no image'), style: 'padding: 3px', size: '90x90' %></td>
             <td><%= workout.name %></td>
             <td><%= workout.description %></td>
             <td><%= link_to 'Show', workout %></td>

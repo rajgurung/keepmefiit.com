@@ -4,10 +4,11 @@
     Back
   <% end %>
   <!-- <h1>New user_workout</h1> -->
-  <%= form_tag search_workout_user_workouts_path, method: :get, remote: true do %>
-  	<%= text_field_tag :term %>
-  	<%= submit_tag 'Search Exercise' %>
-	<% end %>
 </div>
+
+<%= form_tag search_workout_user_workouts_path, method: :get, remote: true do %>
+    <%= text_field_tag :term %>
+    <%= submit_tag 'Search Exercise' %>
+<% end %>
 
 <%= render 'form' %>
