@@ -1,6 +1,8 @@
 class UserWorkoutsController < ApplicationController
   before_action :set_user_workout, only: [:show, :edit, :update, :destroy]
 
+  respond_to :html, :js
+
   # GET /user_workouts
   # GET /user_workouts.json
   def index
@@ -62,7 +64,7 @@ class UserWorkoutsController < ApplicationController
   end
 
   def search_workout
-    Workout.where(" name in ?", params[:term])
+    @workout = _workout.where('name ILIKE ?', "%#{params[:term]}%")
   end
 
   private
@@ -74,5 +76,9 @@ class UserWorkoutsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_workout_params
       params.require(:user_workout).permit(:set, :rep, :weight, :workout_id, :user_id)
+    end
+
+    def _workout
+      Workout
     end
 end

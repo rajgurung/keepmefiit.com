@@ -1,0 +1,51 @@
+/ <div class='container' style='margin-top:15px'>
+.row{:style => 'margin-top:15px;'}
+  .col-md-2{:style => 'background-color:none;margin-bottom:25px'}
+    .row
+      .col-md-12{:style => 'padding:3px 0 8px 0px;text-align:center;background-color:none'}
+        / #d3d3d3
+        = image_tag('avatar-13.png', size: '80x80')
+        %p.post-info
+          %b Raj Gurung
+          %br/
+          Enthusiast at keepmefiit
+          %br/
+          Wt: 115kg | Ht: 5'10'
+  .col-md-8
+    - @posts.each do |post|
+      %section
+        .row{:style => 'background-color:none;'}
+          / 01. Top div
+          .col-xs-12{:style => 'background-color:#f5f5f5;padding:10px 10px;border-radius:0px;'}
+            .display_inline_block{:style => 'background-color:none'}
+              / <h3> <haml_silent></haml_silent> </h3>
+              %div
+                .float_left
+                  = image_tag('avatar.jpeg', class: 'img-circle', size: '50x50')
+                .float_left
+                  .post_by
+                    = post[:email]
+                  .post_by
+                    = time_ago_in_words(post[:created_at])
+              .post_content
+                %p{:style => 'font-size:14px'}
+                  = post[:content]
+              %div{:style => 'border-style: dotted none none none;border-width:1px;padding-top:4px'}
+                %span
+                  = image_tag('green-heart.png', class: 'img-circle', size: '20x20')
+                  %span.complementary 1 k
+                %span.twelve_left_margin
+                  = image_tag('blue-pulse.png', class: 'img-circle', size: '30x20')
+                  %span.complementary 7 k
+        / 01. End div
+  .col-md-2
+    .col-md-12.wrapper_colour{:style => 'border-radius:0px;'}
+      Ads
+/ </div>
+/
+  <script type='text/javascript'>
+  $('.vote').click(function () {
+  $(this).toggleClass('on');
+  });
+  
+  </script>

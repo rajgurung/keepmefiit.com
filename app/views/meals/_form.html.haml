@@ -1,0 +1,47 @@
+= form_for(@meal, html: { class: "form-horizontal", role: "form" }) do |f|
+  - if @meal.errors.any?
+    .alert.alert-danger.alert-dismissable{:role => "alert"}
+      %button.close{"data-dismiss" => "alert", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+        %span.sr-only Close
+      %h4
+        = pluralize(@meal.errors.count, "error")
+        prohibited this meal from being saved:
+      %ul
+        - @meal.errors.full_messages.each do |msg|
+          %li= msg
+  .form-group
+    = f.label :name, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_area :name, class: "form-control"
+  .form-group
+    = f.label :calorie, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :calorie, class: "form-control"
+  .form-group
+    = f.label :protein, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :protein, class: "form-control"
+  .form-group
+    = f.label :carb, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :carb, class: "form-control"
+  .form-group
+    = f.label :fat, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :fat, class: "form-control"
+  .form-group
+    = f.label :sodium, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :sodium, class: "form-control"
+  .form-group
+    = f.label :sugar, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :sugar, class: "form-control"
+  .form-group
+    = f.label :gram, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :gram, class: "form-control"
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = f.submit class: "btn btn-primary"

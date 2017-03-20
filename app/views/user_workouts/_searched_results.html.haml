@@ -1,0 +1,9 @@
+%div
+  - @workout.each do |w|
+    .row{style: 'margin-bottom: 15px'}
+      .col-xs-12
+        %span{style: 'float:left;display:block;background-color:grey;'}
+          = image_tag (w.pictograms.first.url rescue 'no image'), style: 'padding: 3px', size: '90x90'
+        %span{style: 'float:left;margin-left:15px;'}
+          %h2= w.name
+

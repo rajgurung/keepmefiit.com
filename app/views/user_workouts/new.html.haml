@@ -1,0 +1,19 @@
+.page-header
+  = link_to user_workouts_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  %h1 New user_workout
+
+%br
+
+= form_tag search_workout_user_workouts_path, method: :get, remote: true do
+  = text_field_tag :term
+  = submit_tag 'Search Exercise'
+
+%br
+
+#show_results
+
+%br
+
+= render 'form'

@@ -1,0 +1,21 @@
+.page-header
+  = link_to new_workout_category_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Workout category
+  %h1 Listing workout_categories
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Name
+        %th Description
+        %th
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @workout_categories) do |workout_category|
+        %td= workout_category.name
+        %td= workout_category.description
+        %td= link_to 'Show', workout_category
+        %td= link_to 'Edit', edit_workout_category_path(workout_category)
+        %td= link_to 'Destroy', workout_category, method: :delete, data: { confirm: 'Are you sure?' }

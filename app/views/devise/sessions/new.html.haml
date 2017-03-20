@@ -1,0 +1,23 @@
+.page-header
+  = link_to todos_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  %h1 Log in
+= form_for(resource, html: { class: "form-horizontal", role: "form" }, as: resource_name, url: session_path(resource_name)) do |f|
+  .form-group
+    = f.label :email, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.email_field :email, class: "form-control", autocomplete: "on"
+  .form-group
+    = f.label :password, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.password_field :password, class: "form-control", autocomplete: "off"
+  - if devise_mapping.rememberable?
+    .form-group
+      = f.label :remember_me, class: "col-sm-2 control-label"
+      .col-sm-10
+        = f.check_box :remember_me, class: "form-control"
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = f.submit "Log in", class: "btn btn-primary"
+= render "devise/shared/links"

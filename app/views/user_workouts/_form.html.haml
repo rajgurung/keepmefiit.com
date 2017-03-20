@@ -1,0 +1,35 @@
+= form_for(@user_workout, html: { class: 'form-horizontal', role: 'form' }) do |f|
+  - if @user_workout.errors.any?
+    .alert.alert-danger.alert-dismissable{:role => 'alert'}
+      %button.close{'data-dismiss' => 'alert', :type => 'button'}
+        %span{'aria-hidden' => 'true'} ×
+        %span.sr-only Close
+      %h4
+        = pluralize(@user_workout.errors.count, 'error')
+        prohibited this user_workout from being saved:
+      %ul
+        - @user_workout.errors.full_messages.each do |msg|
+          %li= msg
+  .form-group
+    = f.label :set, class: 'col-sm-2 control-label'
+    .col-sm-10
+      = f.number_field :set, class: 'form-control'
+  .form-group
+    = f.label :rep, class: 'col-sm-2 control-label'
+    .col-sm-10
+      = f.number_field :rep, class: 'form-control'
+  .form-group
+    = f.label :weight, class: 'col-sm-2 control-label'
+    .col-sm-10
+      = f.number_field :weight, class: 'form-control'
+  .form-group
+    = f.label :workout, class: 'col-sm-2 control-label'
+    .col-sm-10
+      = f.text_field :workout, class: 'form-control'
+  .form-group
+    = f.label :user, class: 'col-sm-2 control-label'
+    .col-sm-10
+      = f.text_field :user, class: 'form-control'
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = f.submit class: 'btn btn-primary'

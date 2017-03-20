@@ -1,0 +1,9 @@
+.page-header
+  = link_to workout_categories_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to @workout_category, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-info-sign
+    Show
+  %h1 Editing workout_category
+= render 'form'

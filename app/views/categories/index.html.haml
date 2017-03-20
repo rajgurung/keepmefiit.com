@@ -1,0 +1,37 @@
+/
+  <div class="page-header">
+  <haml_silent>
+  </haml_silent>    <span class="glyphicon glyphicon-plus"></span>
+  New Category
+  <haml_silent>
+  </haml_silent>  <h1>Listing categories</h1>
+  </div>
+/
+  <div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+  <thead>
+  <tr>
+  <th>Title</th>
+  <th>Notes</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  </tr>
+  </thead>
+  
+  <tbody>
+  <haml_silent>
+  </haml_silent>            <td><haml_silent></haml_silent></td>
+  <td><haml_silent></haml_silent></td>
+  <td><haml_silent></haml_silent></td>
+  <td><haml_silent></haml_silent></td>
+  <td><haml_silent></haml_silent></td>
+  <haml_silent>
+  </haml_silent>    </tbody>
+  </table>
+  </div>
+%div{:style => "margin-top:15px"}
+  .row
+    - @categories.each do |c|
+      .categories.col-xs-6.col-sm-4
+        %h1= c.title

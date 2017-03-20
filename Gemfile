@@ -83,4 +83,6 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'annotate'
 
-gem 'erb2haml', :group => :development
+# gem 'erb2haml', :group => :development
+
+gem 'haml', '~> 5.0.0.beta.2'
