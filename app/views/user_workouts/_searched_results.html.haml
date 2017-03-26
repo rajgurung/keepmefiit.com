@@ -1,9 +1,8 @@
-%div
+%div#workout_grid
   - @workout.each do |w|
-    .row{style: 'margin-bottom: 15px'}
+    .row.select_workout.display_design{id: "#{w.id}"}
       .col-xs-12
         %span{style: 'float:left;display:block;background-color:grey;'}
           = image_tag (w.pictograms.first.url rescue 'no image'), style: 'padding: 3px', size: '90x90'
         %span{style: 'float:left;margin-left:15px;'}
-          %h2= w.name
-
+          %p= w.name

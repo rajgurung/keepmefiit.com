@@ -1,4 +1,4 @@
-= form_for(@workout, html: { class: "form-horizontal", role: "form" }) do |f|
+= form_for(@workout, html: { class: "form-horizontal", role: "form" }, style: 'display:none') do |f|
   - if @workout.errors.any?
     .alert.alert-danger.alert-dismissable{:role => "alert"}
       %button.close{"data-dismiss" => "alert", :type => "button"}

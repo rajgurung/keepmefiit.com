@@ -2,13 +2,15 @@
   = link_to user_workouts_path, class: 'btn btn-default' do
     %span.glyphicon.glyphicon-list-alt
     Back
-  %h1 New user_workout
+  %h3 Add Training
 
 %br
-
-= form_tag search_workout_user_workouts_path, method: :get, remote: true do
-  = text_field_tag :term
-  = submit_tag 'Search Exercise'
+.row
+  .col-lg-12
+    = form_tag search_workout_user_workouts_path, method: :get, remote: true, class: 'input-group', id: 'search_id' do
+      = text_field_tag :term, nil, class: 'form-control'
+      %span.input-group-btn
+        = submit_tag 'Search Exercise', class: 'btn btn-default'
 
 %br
 
