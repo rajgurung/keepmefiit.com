@@ -1,0 +1,27 @@
+.page-header
+  = link_to new_user_workout_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New User workout
+  %h1 Listing user_workouts
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Set
+        %th Rep
+        %th Weight
+        %th Workout
+        %th User
+        %th
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @user_workouts) do |user_workout|
+        %td= user_workout.set
+        %td= user_workout.rep
+        %td= user_workout.weight
+        %td= user_workout.workout
+        %td= user_workout.user
+        %td= link_to 'Show', user_workout
+        %td= link_to 'Edit', edit_user_workout_path(user_workout)
+        %td= link_to 'Destroy', user_workout, method: :delete, data: { confirm: 'Are you sure?' }

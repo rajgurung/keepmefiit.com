@@ -1,0 +1,25 @@
+.page-header
+  = link_to meals_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_meal_path(@meal), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show meal
+%dl.dl-horizontal
+  %dt Name:
+  %dd= @meal.name
+  %dt Calorie:
+  %dd= @meal.calorie
+  %dt Protein:
+  %dd= @meal.protein
+  %dt Carb:
+  %dd= @meal.carb
+  %dt Fat:
+  %dd= @meal.fat
+  %dt Sodium:
+  %dd= @meal.sodium
+  %dt Sugar:
+  %dd= @meal.sugar
+  %dt Gram:
+  %dd= @meal.gram

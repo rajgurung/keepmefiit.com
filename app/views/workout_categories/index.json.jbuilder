@@ -1,0 +1,1 @@
+json.array! @workout_categories, partial: 'workout_categories/workout_category', as: :workout_category

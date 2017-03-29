@@ -1,0 +1,19 @@
+.page-header
+  = link_to user_workouts_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_user_workout_path(@user_workout), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show user_workout
+%dl.dl-horizontal
+  %dt Set:
+  %dd= @user_workout.set
+  %dt Rep:
+  %dd= @user_workout.rep
+  %dt Weight:
+  %dd= @user_workout.weight
+  %dt Workout:
+  %dd= @user_workout.workout
+  %dt User:
+  %dd= @user_workout.user

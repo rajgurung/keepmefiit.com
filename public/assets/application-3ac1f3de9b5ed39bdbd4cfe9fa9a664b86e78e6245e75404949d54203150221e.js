@@ -11508,7 +11508,7 @@ return jQuery;
 
       if (!rails.allowAction(form)) return rails.stopEverything(e);
 
-      // Skip other logic when required values are missing or file upload is present
+      // Skip other logic when required values are missing or file uploads is present
       if (form.attr('novalidate') === undefined) {
         if (form.data('ujs:formnovalidate-button') === undefined) {
           blankRequiredInputs = rails.blankInputs(form, rails.requiredInputSelector, false);

@@ -1,0 +1,13 @@
+.page-header
+  = link_to categories_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_category_path(@category), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show category
+%dl.dl-horizontal
+  %dt Title:
+  %dd= @category.title
+  %dt Notes:
+  %dd= @category.notes

@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  resources :workout_categories
+  resources :user_workouts do
+    collection do
+      get 'search_workout' => 'user_workouts#search_workout'
+    end
+  end 
+  
+  resources :workouts 
   # get 'dashboards/index'
   get "/dashboards", to: "dashboards#index"
 
