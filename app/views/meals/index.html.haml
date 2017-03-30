@@ -1,0 +1,33 @@
+.page-header
+  = link_to new_meal_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Meal
+  %h1 Listing meals
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Name
+        %th Calorie
+        %th Protein
+        %th Carb
+        %th Fat
+        %th Sodium
+        %th Sugar
+        %th Gram
+        %th
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @meals) do |meal|
+        %td= meal.name
+        %td= meal.calorie
+        %td= meal.protein
+        %td= meal.carb
+        %td= meal.fat
+        %td= meal.sodium
+        %td= meal.sugar
+        %td= meal.gram
+        %td= link_to 'Show', meal
+        %td= link_to 'Edit', edit_meal_path(meal)
+        %td= link_to 'Destroy', meal, method: :delete, data: { confirm: 'Are you sure?' }

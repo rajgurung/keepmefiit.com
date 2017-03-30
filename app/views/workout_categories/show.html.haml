@@ -1,0 +1,13 @@
+.page-header
+  = link_to workout_categories_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_workout_category_path(@workout_category), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h1 Show workout_category
+%dl.dl-horizontal
+  %dt Name:
+  %dd= @workout_category.name
+  %dt Description:
+  %dd= @workout_category.description

@@ -1,0 +1,27 @@
+= form_for(@todo, html: { class: "form-horizontal", role: "form" }) do |f|
+  - if @todo.errors.any?
+    .alert.alert-danger.alert-dismissable{:role => "alert"}
+      %button.close{"data-dismiss" => "alert", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+        %span.sr-only Close
+      %h4
+        = pluralize(@todo.errors.count, "error")
+        prohibited this todo from being saved:
+      %ul
+        - @todo.errors.full_messages.each do |msg|
+          %li= msg
+  .form-group
+    = f.label :title, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_field :title, class: "form-control"
+  .form-group
+    = f.label :notes, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.text_area :notes, class: "form-control"
+  .form-group
+    = f.label :done, class: "col-sm-2 control-label"
+    .col-sm-10
+      = f.check_box :done, class: "form-control"
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = f.submit class: "btn btn-primary"

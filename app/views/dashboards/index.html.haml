@@ -1,0 +1,181 @@
+/ <div class="page-header">
+/ <h1>Dashboard</h1>
+.col-lg-12{:style => "margin:20px 0 25px 0"}
+  .row
+    .col-xs-12{:style => "padding:3px 0 8px 10px;text-align:center;background-color:none"}
+      / #d3d3d3
+      = image_tag("avatar-13.png", size: "90x90")
+/ </div>
+/ <p>Find me in app/views/dashboards/index.html.erb</p>
+.row
+  .col-md-4{:style => "background-color:none;margin-bottom:25px"}
+    .col-md-12.wrapper_colour
+      .row
+        .col-md-12{:style => "padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"}
+          / #d3d3d3
+          %b NEWS FEED
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        / <div class="col-md-12 top_margin" style="padding:3px 0 8px 0">
+        .col-xs-3.left_info
+          = image_tag("avatar.png", size: "60x60")
+        .col-xs-9.news_feed_center_info
+          Just completed my goal
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 10,000 steps
+        /
+          <div class="col-xs-2 news_feed_right_info">
+          8/10
+          </div>
+        / </div>
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        / <div class="col-md-12 top_margin" style="padding:3px 0 8px 0">
+        .col-xs-3.left_info
+          = image_tag("avatar-7.png", size: "60x60")
+        .col-xs-9.news_feed_center_info
+          Smashed the leg workout
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 60 minutes of weight training
+        /
+          <div class="col-xs-2 news_feed_right_info">
+          10/10
+          </div>
+        / </div>
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        / <div class="col-md-12 top_margin" style="padding:3px 0 8px 0">
+        .col-xs-3.left_info
+          = image_tag("avatar-9.png", size: "60x60")
+        .col-xs-9.news_feed_center_info
+          Killed the gym session
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 20,000 steps
+        /
+          <div class="col-xs-2 news_feed_right_info">
+          7/10
+          </div>
+        / </div>
+  .col-md-5{:style => "background-color:none;margin-bottom:25px"}
+    .col-md-12.wrapper_colour
+      .row
+        .col-md-12{:style => "padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"}
+          / #d3d3d3
+          %b DAILY STATS
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:2px 0 3px 0"}
+        .col-xs-2.left_info
+          = image_tag("sports.png", size: "60x60")
+          / <div class="center_footer_info"> STEPS</div>
+        .col-xs-5.center_info
+          5,108
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 10,000 steps
+        .col-xs-5.right_info
+          60,000
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Average weekly steps
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:2px 0 3px 0"}
+        .col-xs-2.left_info
+          = image_tag("healthy-food-diet.png", size: "60x60")
+          / <div class="center_footer_info"> STEPS</div>
+        .col-xs-5.center_info
+          1906
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 2200 Kcal
+        .col-xs-5.right_info
+          6000
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Average weekly calories consumed
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:2px 0 3px 0"}
+        .col-xs-2.left_info
+          = image_tag("bottle.png", size: "60x60")
+          / <div class="center_footer_info"> STEPS</div>
+        .col-xs-5.center_info
+          2
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 3 liters
+        .col-xs-5.right_info
+          11
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Average weekly liters drank
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:2px 0 4px 0"}
+        .col-xs-2.left_info
+          = image_tag("dumbbell.png", size: "60x60")
+          / <div class="center_footer_info"> STEPS</div>
+        .col-xs-5.center_info
+          120
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 150 minutes of weight training
+        .col-xs-5.right_info
+          70
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Average weekly training
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:2px 0 4px 0"}
+        .col-xs-2.left_info
+          = image_tag("running-1.png", size: "60x60")
+          / <div class="center_footer_info"> STEPS</div>
+        .col-xs-5.center_info
+          20
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Daily Goal of 40 minutes of cardio
+        .col-xs-5.right_info
+          30
+          / <span class="center_sub_info"> Steps </span>
+          .center_footer_info Average weekly cardio
+  .col-md-3{:style => "background-color:none;margin-bottom:25px"}
+    .col-md-12{:style => "padding:3px 0 8px 0;text-align:center;background-color:#d3d3d3"}
+      %b GLOBAL LEADERBOARD
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        .col-xs-3.left_info
+          = image_tag("avatar.png", size: "60x60")
+        .col-xs-9.leaderboard_center_info
+          20,000 steps
+          / <span class="center_sub_info"> Steps </span>
+          .leaderboard_center_footer_info Elite Level. Pro Member.
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        .col-xs-3.left_info
+          = image_tag("avatar-10.png", size: "60x60")
+        .col-xs-9.leaderboard_center_info
+          15,000 steps
+          / <span class="center_sub_info"> Steps </span>
+          .leaderboard_center_footer_info Elite Level.
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        .col-xs-3.left_info
+          = image_tag("avatar.png", size: "60x60")
+        .col-xs-9.leaderboard_center_info
+          10,000 steps
+          / <span class="center_sub_info"> Steps </span>
+          .leaderboard_center_footer_info Elite Level. Pro Member.
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        .col-xs-3.left_info
+          = image_tag("avatar-10.png", size: "60x60")
+        .col-xs-9.leaderboard_center_info
+          8,000 steps
+          / <span class="center_sub_info"> Steps </span>
+          .leaderboard_center_footer_info Elite Level.
+    .col-md-12.wrapper_colour.top_margin
+      .row{:style => "padding:1px 0 4px 0"}
+        .col-xs-3.left_info
+          = image_tag("avatar.png", size: "60x60")
+        .col-xs-9.leaderboard_center_info
+          7,000 steps
+          / <span class="center_sub_info"> Steps </span>
+          .leaderboard_center_footer_info Elite Level. Pro Member.
+/ 
+%br/
+%br/
+%br/
+%br/
+%br/
+%br/
+/ https://www.google.co.uk/search?q=fitness+dashboard&client=ubuntu&hs=q2G&channel=fs&tbm=isch&imgil=9AG0a5yYTG6RnM%253A%253BqYl3W1rx2r9fnM%253Bhttps%25253A%25252F%25252Fdribbble.com%25252FBenzai%25252Fprojects%25252F202246-Fitness-dashboard&source=iu&pf=m&fir=9AG0a5yYTG6RnM%253A%252CqYl3W1rx2r9fnM%252C_&usg=__2XGkYpGzJ8mXC0RyFfvzVQKZj_8%3D&biw=1108&bih=813&ved=0ahUKEwjci-rWhPLQAhXJJcAKHcJYCJ4QyjcIRQ&ei=xV1QWJyVLcnLgAbCsaHwCQ#imgrc=ndDQpkZSWUBTZM%3A
+/ https://keen.io/blog/101269629091/charts-on-grids-responsive-dashboard-templates-with

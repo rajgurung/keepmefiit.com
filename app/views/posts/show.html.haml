@@ -1,0 +1,24 @@
+.page-header
+  = link_to posts_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to edit_post_path(@post), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    Edit
+  %h2= @post.title
+  %span.sub_title
+    By #{@post.user.email}
+%dl.dl-horizontal
+  /
+    <dt>Title:</dt>
+    <dd><haml_silent></haml_silent></dd>
+    
+    <dt>Content:</dt>
+    <dd><haml_silent></haml_silent></dd>
+    
+    <dt>User:</dt>
+    <dd><haml_silent></haml_silent></dd>
+    
+    <dt>Category:</dt>
+    <dd><haml_silent></haml_silent></dd>
+  %p= markdown(@post.content)

@@ -1,0 +1,9 @@
+.page-header
+  = link_to meals_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  = link_to @meal, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-info-sign
+    Show
+  %h1 Editing meal
+= render 'form'

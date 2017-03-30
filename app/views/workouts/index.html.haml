@@ -1,0 +1,24 @@
+.page-header
+  = link_to new_workout_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Workout
+  %h1 Listing workouts
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Pictogram
+        %th Name
+        %th Description
+        %th
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @workouts) do |workout|
+        %td.thumbnail{:style => "padding:0;background-color:#333;text-align:center;margin: 0"}
+          = image_tag (workout.pictograms.first.url rescue 'no image'), style: 'padding: 3px', size: '90x90'
+        %td= workout.name
+        %td= workout.description
+        %td= link_to 'Show', workout
+        %td= link_to 'Edit', edit_workout_path(workout)
+        %td= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' }

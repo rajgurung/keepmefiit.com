@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.3.3"
+ruby "2.4.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 5.0.0'
@@ -50,7 +50,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # must have gems
-gem 'pg', '0.18.4'
+# gem 'pg', '0.18.4'
+gem 'pg', '~> 0.19.0'
 gem 'active_model_serializers', '~> 0.10.0.rc5'
 gem 'authority', '3.1.0'
 gem 'rolify', '5.1.0'
@@ -78,6 +79,10 @@ gem 'bootstrap-select-rails', '~> 1.6', '>= 1.6.3'
 
 gem 'figaro'
 
+gem 'carrierwave', '~> 1.0'
 
+gem 'annotate'
 
+# gem 'erb2haml', :group => :development
 
+gem 'haml', '~> 5.0.0.beta.2'

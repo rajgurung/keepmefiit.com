@@ -1,0 +1,23 @@
+.page-header
+  = link_to new_todo_path, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-plus
+    New Todo
+  %h1 Listing todos
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th Title
+        %th Notes
+        %th Done
+        %th
+        %th
+        %th
+    %tbody
+      = content_tag_for(:tr, @todos) do |todo|
+        %td= todo.title
+        %td= todo.notes
+        %td= todo.done
+        %td= link_to 'Show', todo
+        %td= link_to 'Edit', edit_todo_path(todo)
+        %td= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' }

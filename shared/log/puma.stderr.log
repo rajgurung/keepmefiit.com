@@ -1,0 +1,156 @@
+=== puma startup: 2017-03-29 22:03:51 +0000 ===
+=== puma startup: 2017-03-29 22:04:11 +0000 ===
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Bignum is deprecated
+=== puma startup: 2017-03-29 22:04:16 +0000 ===
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is deprecated
+=== puma startup: 2017-03-29 22:04:18 +0000 ===
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:51: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/xml_mini.rb:52: warning: constant ::Bignum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/logger.rb:1:in `require': Interrupt
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/logger.rb:1:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support.rb:27:in `require'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support.rb:27:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/rake_proxy.rb:1:in `require'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/rake_proxy.rb:1:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:1:in `require'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:1:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:16:in `require'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/commands.rb:16:in `<top (required)>'
+	from /home/raj/blog/bin/rails:9:in `require'
+	from /home/raj/blog/bin/rails:9:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/client/rails.rb:28:in `load'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/client/rails.rb:28:in `call'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/client/command.rb:7:in `call'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/client.rb:30:in `run'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/bin/spring:49:in `<top (required)>'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/binstub.rb:31:in `load'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/spring-2.0.0/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /home/raj/blog/bin/spring:13:in `require'
+	from /home/raj/blog/bin/spring:13:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activesupport-5.0.1/lib/active_support/core_ext/numeric/conversions.rb:138: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Fixnum is deprecated
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activejob-5.0.1/lib/active_job/arguments.rb:38: warning: constant ::Bignum is deprecated
+=== puma startup: 2017-03-29 22:04:23 +0000 ===
+2017-03-29 22:08:29 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:08:36 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:08:41 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:08:46 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:08:50 +0000: Rack app error handling request { GET /300 }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:15:27 +0000: Rack app error handling request { GET /300 }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:15:35 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:15:41 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+2017-03-29 22:16:28 +0000: Rack app error handling request { GET / }
+#<RuntimeError: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`>
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:513:in `validate_secret_key_config!'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:246:in `env_config'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:693:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/application.rb:521:in `build_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.0.1/lib/rails/engine.rb:521:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/configuration.rb:225:in `call'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:578:in `handle_request'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:415:in `process_client'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:275:in `block in run'
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+=== puma startup: 2017-03-29 22:17:55 +0000 ===
+=== puma startup: 2017-03-30 07:47:01 +0000 ===
+/home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:369:in `close': stream closed (IOError)
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:369:in `ensure in handle_servers'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:372:in `handle_servers'
+	from /home/raj/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/puma-3.6.2/lib/puma/server.rb:301:in `block in run'
+=== puma startup: 2017-03-30 07:47:33 +0000 ===

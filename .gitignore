@@ -24,3 +24,5 @@
 /config/application.yml
 
 /.idea
+/.idea/*
+/.ruby-version
