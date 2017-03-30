@@ -1,0 +1,1 @@
+(function(){$(function(){return console.log("ok"),$("#new_user_workout").hide(),$(document).on("click",".select_workout",function(){return console.log("foo"),console.log(this.id),$("#workout_grid").hide(),$("#new_user_workout").fadeIn(500)}),$(document).on("click","#search_id",function(){return $("#new_user_workout").hide()})})}).call(this);
