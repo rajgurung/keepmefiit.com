@@ -1,0 +1,40 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+
+$ ->
+
+  # https://css-tricks.com/jquery-coffeescript/
+
+  # Let's write a class that will hold details of clicked image
+  class W
+    constructor: (@id, @image_url, @name) ->
+    _id:        () -> @id
+    _image_url: () -> @image_url
+    _name:      () -> @name
+
+
+  $('#workout_form').hide()
+  # $('#new_user_workout').hide()
+
+
+  $(document).on 'click', '.select_workout', ->
+
+    w = new W this.id, this.attributes.image_url.value, this.attributes.name.value
+    console.log w._id()
+    console.log w._image_url()
+    console.log w._name()
+
+    image_tag_builder = '<' + '%= ' + 'image_tag ' + w._image_url() + ' %>'
+
+    $('#workout_grid').hide()
+    $('#workout_form').fadeIn( 500 )
+    #$('#new_user_workout').fadeIn( 500 )
+    $('#load_image').html( "<img src=\"" + w._image_url() + "\" width='90' height='90' />" ).addClass( "workout_image" )
+
+
+
+  $(document).on 'click', '#search_id', ->
+
+    # $('#new_user_workout').hide()
+    $('#workout_form').hide()
