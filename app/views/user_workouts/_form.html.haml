@@ -10,26 +10,37 @@
       %ul
         - @user_workout.errors.full_messages.each do |msg|
           %li= msg
-  .form-group
-    = f.label :set, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :set, class: 'form-control'
-  .form-group
-    = f.label :rep, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :rep, class: 'form-control'
-  .form-group
-    = f.label :weight, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.number_field :weight, class: 'form-control'
-  .form-group
-    = f.label :workout, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_field :workout, class: 'form-control'
-  .form-group
-    = f.label :user, class: 'col-sm-2 control-label'
-    .col-sm-10
-      = f.text_field :user, class: 'form-control'
-  .form-group
-    .col-sm-offset-2.col-sm-10
-      = f.submit class: 'btn btn-primary'
+
+  .row
+    .col-xs-4
+      %span#load_image
+    .col-xs-4
+      %b SETS
+      %h2 3
+    .col-xs-4
+      %b REPS
+      %h2 12
+
+  -#.form-group
+  -#  = f.label :set, class: 'col-sm-2 control-label'
+  -#  .col-sm-10
+  -#    = f.number_field :set, class: 'form-control'
+  -#.form-group
+  -#  = f.label :rep, class: 'col-sm-2 control-label'
+  -#  .col-sm-10
+  -#    = f.number_field :rep, class: 'form-control'
+  -#.form-group
+  -#  = f.label :weight, class: 'col-sm-2 control-label'
+  -#  .col-sm-10
+  -#    = f.number_field :weight, class: 'form-control'
+  -#.form-group
+  -#  = f.label :workout, class: 'col-sm-2 control-label'
+  -#  .col-sm-10
+  -#    = f.text_field :workout, class: 'form-control'
+  -#.form-group
+  -#  = f.label :user, class: 'col-sm-2 control-label'
+  -#  .col-sm-10
+  -#    = f.text_field :user, class: 'form-control'
+  -#.form-group
+  -#  .col-sm-offset-2.col-sm-10
+  -#    = f.submit class: 'btn btn-primary'
