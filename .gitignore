@@ -27,3 +27,6 @@
 /.idea/*
 /.ruby-version
 /shared/*
+
+/public/public/*
+/public/assets/*
