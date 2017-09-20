@@ -15,8 +15,6 @@ $ ->
 
 
   $('#workout_form').hide()
-  # $('#new_user_workout').hide()
-
 
   $(document).on 'click', '.select_workout', ->
 
@@ -26,15 +24,9 @@ $ ->
     console.log w._name()
 
     image_tag_builder = '<' + '%= ' + 'image_tag ' + w._image_url() + ' %>'
-
     $('#workout_grid').hide()
     $('#workout_form').fadeIn( 500 )
-    #$('#new_user_workout').fadeIn( 500 )
     $('#load_image').html( "<img src=\"" + w._image_url() + "\" width='100' height='100' />" ).addClass( "workout_image" )
 
-
-
   $(document).on 'click', '#search_id', ->
-
-    # $('#new_user_workout').hide()
     $('#workout_form').hide()

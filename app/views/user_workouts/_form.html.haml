@@ -14,6 +14,7 @@
   .row.form-group
     .col-xs-3{:style => "text-align:center;"}
       %span#load_image
+      = f.hidden_field :workout_id, value: 1
     .col-xs-2.center_text
       -#%h2.user_workout_input 30
       = f.number_field :weight, class: 'user_workout_input center_text', placeholder: 'wts'

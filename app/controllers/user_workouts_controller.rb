@@ -26,6 +26,7 @@ class UserWorkoutsController < ApplicationController
   # POST /user_workouts
   # POST /user_workouts.json
   def create
+    raise user_workout_params.inspect
     @user_workout = UserWorkout.new(user_workout_params)
 
     respond_to do |format|
@@ -79,6 +80,8 @@ class UserWorkoutsController < ApplicationController
     end
 
     def _workout
+      foo = Hash.new
+      foo[1]
       Workout
     end
 end
