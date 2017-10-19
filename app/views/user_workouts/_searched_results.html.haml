@@ -1,8 +1,0 @@
-%div#workout_grid
-  - @workout.each do |w|
-    .row.select_workout.display_design{id: "#{w.id}", image_url: "#{w.pictograms.first.url}", name: "#{w.name}"}
-      .col-xs-12
-        %span.workout_image
-          = image_tag (w.pictograms.first.url rescue 'no image'), style: 'padding: 3px', size: '90x90'
-        %span.workout_name
-          %p= w.name
