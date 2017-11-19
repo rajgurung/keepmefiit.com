@@ -1,17 +1,40 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  host: postgres
-  pool: 5
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
-  database: <%= ENV["DB_NAME"] %>
+#default: &default
+#  adapter: postgresql
+#  encoding: unicode
+#  pool: 5
+#  port: 5432
+#  username: <%= ENV["DB_USERNAME"] %>
+#  password: <%= ENV["DB_PASSWORD"] %>
+#  database: <%= ENV["DB_NAME"] %>
+#
+#development:
+#  <<: *default
+#
+#production:
+#  <<: *default
+#
+#test:
+#  <<: *default
 
 development:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["DB_NAME"] %>
+  pool: 5
+  username: <%= ENV["DB_USERNAME"] %>
+  # password: password
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["DB_NAME"] %>
+  pool: 5
+  username: <%= ENV["DB_USERNAME"] %>
+  # password: password
 
 test:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV["DB_NAME"] %>
+  pool: 5
+  username: <%= ENV["DB_USERNAME"] %>

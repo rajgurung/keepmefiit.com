@@ -5,6 +5,7 @@ class WorkoutCategoriesController < ApplicationController
   # GET /workout_categories.json
   def index
     @workout_categories = WorkoutCategory.all
+    render json: @workout_categories
   end
 
   # GET /workout_categories/1

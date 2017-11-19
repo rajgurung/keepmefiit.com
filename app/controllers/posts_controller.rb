@@ -15,6 +15,7 @@ class PostsController < ApplicationController
                   created_at: post.created_at 
                 }                  
               end
+    render json: @posts
   end
 
   # GET /posts/1
