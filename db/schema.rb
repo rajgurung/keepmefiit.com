@@ -25,8 +25,10 @@ ActiveRecord::Schema.define(version: 20171119205902) do
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.decimal  "price",      precision: 5, scale: 2
+    t.integer  "user_id"
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
+    t.index ["user_id"], name: "index_items_on_user_id", using: :btree
   end
 
   create_table "meals", force: :cascade do |t|
@@ -43,11 +45,12 @@ ActiveRecord::Schema.define(version: 20171119205902) do
   end
 
   create_table "order_items", force: :cascade do |t|
+    t.integer  "quantity"
+    t.decimal  "total_price", precision: 12, scale: 2
+    t.decimal  "unit_price",  precision: 12, scale: 2
     t.integer  "item_id"
     t.integer  "order_id"
     t.integer  "user_id"
-    t.integer  "quantity"
-    t.decimal  "total_price", precision: 12, scale: 2
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
     t.index ["item_id"], name: "index_order_items_on_item_id", using: :btree
@@ -94,6 +97,7 @@ ActiveRecord::Schema.define(version: 20171119205902) do
   create_table "users", force: :cascade do |t|
     t.string   "name",                   default: "", null: false
     t.string   "email",                  default: "", null: false
+    t.string   "type",                   default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -126,6 +130,7 @@ ActiveRecord::Schema.define(version: 20171119205902) do
     t.index ["workout_category_id"], name: "index_workouts_on_workout_category_id", using: :btree
   end
 
+  add_foreign_key "items", "users"
   add_foreign_key "order_items", "items"
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "users"
