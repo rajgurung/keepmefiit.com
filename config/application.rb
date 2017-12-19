@@ -13,7 +13,9 @@ module Blog
     # -- all .rb files in that directory are automatically loaded.
     # Enable the asset pipeline
     config.api_only = true
-	# config.assets.enabled = true
-	# config.assets.paths << Rails.root.join('/app/assets/fonts')
+	  # config.assets.enabled = true
+	  # config.assets.paths << Rails.root.join('/app/assets/fonts')
+
+    require 'awesome_print'
   end
 end

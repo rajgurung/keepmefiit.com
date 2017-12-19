@@ -54,3 +54,7 @@ gem 'figaro'
 gem 'carrierwave', '~> 1.0'
 gem 'annotate'
 gem 'pundit'
+gem 'awesome_print', '~> 1.8'
+
+# Rails engines
+gem 'blorgh', path: 'engines/blorgh'

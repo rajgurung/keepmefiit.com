@@ -2,13 +2,11 @@
 #
 # Table name: posts
 #
-#  id          :integer          not null, primary key
-#  title       :string
-#  content     :text
-#  user_id     :integer
-#  category_id :integer
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id         :integer          not null, primary key
+#  content    :text
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 require 'rails_helper'

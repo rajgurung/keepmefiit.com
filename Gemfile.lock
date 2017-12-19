@@ -5,6 +5,12 @@ GIT
     prettify (0.1.0)
       json (>= 1.8.2)
 
+PATH
+  remote: engines/blorgh
+  specs:
+    blorgh (0.1.0)
+      rails (~> 5.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,6 +63,7 @@ GEM
     authority (3.1.0)
       activesupport (>= 3.0.0)
       rake (>= 0.8.7)
+    awesome_print (1.8.0)
     bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.1.0)
@@ -190,6 +197,8 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0.rc5)
   annotate
   authority (= 3.1.0)
+  awesome_print (~> 1.8)
+  blorgh!
   byebug
   carrierwave (~> 1.0)
   devise

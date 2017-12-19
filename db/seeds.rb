@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User Type
+# User user_type
 # :user, [can have many level boost up]
 # :personal_trainer, :nutritionist,
 # :admin, :moderator
@@ -16,7 +16,7 @@ ActiveRecord::Base.transaction do
   p 'Create Admin..'
   admin                       = User.find_or_initialize_by(email: 'admin@keepmefiit.com')
   admin.name                  = 'admin'
-  admin.type                  = 'admin'
+  admin.user_type             = 'admin'
   admin.password              = 'Pass1234,'
   admin.password_confirmation = 'Pass1234,'
   admin.save!
@@ -24,7 +24,7 @@ ActiveRecord::Base.transaction do
   p 'Create User1..'
   user1                       = User.find_or_initialize_by(email: 'user1@keepmefiit.com')
   user1.name                  = 'user1'
-  user1.type                  = 'user'
+  user1.user_type             = 'user'
   user1.password              = 'Pass1234,'
   user1.password_confirmation = 'Pass1234,'
   user1.save!
@@ -32,7 +32,7 @@ ActiveRecord::Base.transaction do
   p 'Create User2..'
   user2                       = User.find_or_initialize_by(email: 'user2@keepmefiit.com')
   user2.name                  = 'user2'
-  user2.type                  = 'user'
+  user2.user_type             = 'user'
   user2.password              = 'Pass1234,'
   user2.password_confirmation = 'Pass1234,'
   user2.save!
@@ -40,7 +40,7 @@ ActiveRecord::Base.transaction do
   p 'Create Personal Trainer 1'
   trainer1                       = User.find_or_initialize_by(email: 'personal_trainer_1@keepmefiit.com')
   trainer1.name                  = 'Trainer1'
-  trainer1.type                  = 'trainer'
+  trainer1.user_type             = 'trainer'
   trainer1.password              = 'Pass1234,'
   trainer1.password_confirmation = 'Pass1234,'
   trainer1.save!
@@ -48,7 +48,7 @@ ActiveRecord::Base.transaction do
   p 'Create Personal Trainer 2'
   trainer2                       = User.find_or_initialize_by(email: 'personal_trainer_2@keepmefiit.com')
   trainer2.name                  = 'Trainer2'
-  trainer2.type                  = 'trainer'
+  trainer2.user_type             = 'trainer'
   trainer2.password              = 'Pass1234,'
   trainer2.password_confirmation = 'Pass1234,'
   trainer2.save!
@@ -56,7 +56,7 @@ ActiveRecord::Base.transaction do
   p 'Create Nutritionist 1'
   nutritionist1                       = User.find_or_initialize_by(email: 'nutritionist_1@keepmefiit.com')
   nutritionist1.name                  = 'Nutritionist1'
-  nutritionist1.type                  = 'nutritionist'
+  nutritionist1.user_type             = 'nutritionist'
   nutritionist1.password              = 'Pass1234,'
   nutritionist1.password_confirmation = 'Pass1234,'
   nutritionist1.save!
@@ -64,7 +64,7 @@ ActiveRecord::Base.transaction do
   p 'Create Nutritionist 2'
   nutritionist2                       = User.find_or_initialize_by(email: 'nutritionist_2@keepmefiit.com')
   nutritionist2.name                  = 'Nutritionist2'
-  nutritionist2.type                  = 'nutritionist'
+  nutritionist2.user_type             = 'nutritionist'
   nutritionist2.password              = 'Pass1234,'
   nutritionist2.password_confirmation = 'Pass1234,'
   nutritionist2.save!
@@ -91,8 +91,10 @@ ActiveRecord::Base.transaction do
 
 
   p 'Order Items'
-  Order.new.order_items.build(item: item1, user: user1).save! unless OrderItem.where(item: item1, user: user1).present?
-  Order.new.order_items.build(item: item2, user: user1).save! unless OrderItem.where(item: item2, user: user1).present?
+  order1 = Order.new
+  order1.order_items.build(item: item1, user: user1) unless OrderItem.where(item: item1, user: user1).present?
+  order1.order_items.build(item: item2, user: user1) unless OrderItem.where(item: item2, user: user1).present?
+  order1.save!
   Order.new.order_items.build(item: item3, user: user2).save! unless OrderItem.where(item: item3, user: user2).present?
   Order.new.order_items.build(item: item4, user: user2).save! unless OrderItem.where(item: item4, user: user2).present?
   Order.new.order_items.build(item: item5, user: user2).save! unless OrderItem.where(item: item5, user: user2).present?
