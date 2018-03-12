@@ -11,12 +11,15 @@
 #  pictograms          :json
 #
 
-class Workout < ApplicationRecord
-  mount_uploaders :pictograms, AvatarUploader
+module Workouts
+  class Workout < ApplicationRecord
+    mount_uploaders :pictograms, AvatarUploader
 
-  has_many :user_workouts
-	has_many :users, through: :user_workouts
+    has_many :user_workouts
+    has_many :users, through: :user_workouts
 
-	belongs_to :workout_category
+    belongs_to :workout_category
 
+  end
 end
+

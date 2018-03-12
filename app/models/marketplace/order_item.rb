@@ -13,10 +13,12 @@
 #  updated_at  :datetime         not null
 #
 
-class OrderItem < ApplicationRecord
-  belongs_to :item
-  belongs_to :order
-  belongs_to :user
+module Marketplace
+  class OrderItem < ApplicationRecord
+    belongs_to :item
+    belongs_to :order
+    belongs_to :user
 
-  delegate :name, :price, :description, to: :item, prefix: true
-end
+    delegate :name, :price, :description, to: :item, prefix: true
+  end
+  end

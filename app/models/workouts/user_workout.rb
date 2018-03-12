@@ -12,7 +12,9 @@
 #  updated_at :datetime         not null
 #
 
-class UserWorkout < ApplicationRecord
-  belongs_to :workout
-  belongs_to :user
+module Workouts
+  class UserWorkout < ApplicationRecord
+    belongs_to :workout
+    belongs_to :user
+  end
 end
