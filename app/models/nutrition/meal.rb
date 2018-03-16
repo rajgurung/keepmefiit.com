@@ -15,5 +15,7 @@
 #  updated_at :datetime         not null
 #
 
-class Meal < ApplicationRecord
+module Nutrition
+  class Meal < ApplicationRecord
+  end
 end
