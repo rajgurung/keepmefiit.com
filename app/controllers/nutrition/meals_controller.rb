@@ -4,7 +4,7 @@ class MealsController < ApplicationController
   # GET /meals
   # GET /meals.json
   def index
-    @meals = Meal.all
+    @meals = ::Nutrition::Meal.all
     render json: @meals
   end
 
@@ -15,7 +15,7 @@ class MealsController < ApplicationController
 
   # GET /meals/new
   def new
-    @meal = Meal.new
+    @meal = ::Nutrition::Meal.new
   end
 
   # GET /meals/1/edit
@@ -25,7 +25,7 @@ class MealsController < ApplicationController
   # POST /meals
   # POST /meals.json
   def create
-    @meal = Meal.new(meal_params)
+    @meal = ::Nutrition::Meal.new(meal_params)
 
     respond_to do |format|
       if @meal.save
@@ -65,7 +65,7 @@ class MealsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_meal
-      @meal = Meal.find(params[:id])
+      @meal = ::Nutrition::Meal.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
