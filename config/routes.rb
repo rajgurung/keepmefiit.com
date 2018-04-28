@@ -1,21 +1,35 @@
 Rails.application.routes.draw do
-  resources :order_items
-  resources :items
-  resources :orders
-  resources :workout_categories
-  resources :user_workouts do
-    collection do
-      get 'search_workout' => 'user_workouts#search_workout'
-    end
+  namespace :marketplace do
+    resources :orders
+    resources :items
+    resources :order_items
   end
+
+  namespace :workout do
+    # resources :users do
+      resources :user_workouts do
+        collection do
+          get 'search_workout' => 'user_workouts#search_workout'
+        end
+      end
+    # end
+    resources :workout_categories
+  end
+
+  namespace :nutrition do
+    resources :meals
+  end
+
+  namespace :social do
+    resources :posts
+    resources :categories
+  end
+
 
   resources :workouts
   # get 'dashboards/index'
   get "/dashboards", to: "dashboards#index"
 
-  resources :meals
-  resources :posts
-  resources :categories
   devise_for :users
   resources :todos
 

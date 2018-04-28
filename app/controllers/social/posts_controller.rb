@@ -1,12 +1,13 @@
-class PostsController < ApplicationController
+module Social
+  class PostsController < ApplicationController
 
-  before_action :authenticate_user!, except: [:index, :show]
+  # before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts =  Post.all.order(created_at: :desc).collect do |post|
+    @posts =  ::Social::Post.all.order(created_at: :desc).collect do |post|
                 { 
                   id: post.id,
                   title: post[:title],
@@ -84,4 +85,5 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :content, :user_id, :category_id)
     end
+  end
 end

@@ -1,4 +1,5 @@
-class MealsController < ApplicationController
+module Nutrition
+  class MealsController < ApplicationController
   before_action :set_meal, only: [:show, :edit, :update, :destroy]
 
   # GET /meals
@@ -72,4 +73,5 @@ class MealsController < ApplicationController
     def meal_params
       params.require(:meal).permit(:name, :calorie, :protein, :carb, :fat, :sodium, :sugar, :gram)
     end
+end
 end

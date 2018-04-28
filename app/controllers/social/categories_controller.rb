@@ -1,4 +1,5 @@
-class CategoriesController < ApplicationController
+module Nutrition
+  class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 
   # GET /categories
@@ -72,4 +73,5 @@ class CategoriesController < ApplicationController
     def category_params
       params.require(:category).permit(:title, :notes)
     end
+end
 end

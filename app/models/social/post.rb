@@ -9,6 +9,8 @@
 #  updated_at :datetime         not null
 #
 
-class Post < ApplicationRecord
-  belongs_to :user
+module Social
+  class Post < ApplicationRecord
+    belongs_to :user
+  end
 end
