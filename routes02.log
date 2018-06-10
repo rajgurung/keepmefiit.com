@@ -36,18 +36,18 @@ search_workout_workout_user_workouts GET    /workout/user_workouts/search_workou
                                      PATCH  /nutrition/meals/:id(.:format)                  nutrition/meals#update
                                      PUT    /nutrition/meals/:id(.:format)                  nutrition/meals#update
                                      DELETE /nutrition/meals/:id(.:format)                  nutrition/meals#destroy
-                     nutrition_posts GET    /nutrition/posts(.:format)                      nutrition/posts#index
-                                     POST   /nutrition/posts(.:format)                      nutrition/posts#create
-                      nutrition_post GET    /nutrition/posts/:id(.:format)                  nutrition/posts#show
-                                     PATCH  /nutrition/posts/:id(.:format)                  nutrition/posts#update
-                                     PUT    /nutrition/posts/:id(.:format)                  nutrition/posts#update
-                                     DELETE /nutrition/posts/:id(.:format)                  nutrition/posts#destroy
                 nutrition_categories GET    /nutrition/categories(.:format)                 nutrition/categories#index
                                      POST   /nutrition/categories(.:format)                 nutrition/categories#create
                   nutrition_category GET    /nutrition/categories/:id(.:format)             nutrition/categories#show
                                      PATCH  /nutrition/categories/:id(.:format)             nutrition/categories#update
                                      PUT    /nutrition/categories/:id(.:format)             nutrition/categories#update
                                      DELETE /nutrition/categories/:id(.:format)             nutrition/categories#destroy
+                        social_posts GET    /social/posts(.:format)                         social/posts#index
+                                     POST   /social/posts(.:format)                         social/posts#create
+                         social_post GET    /social/posts/:id(.:format)                     social/posts#show
+                                     PATCH  /social/posts/:id(.:format)                     social/posts#update
+                                     PUT    /social/posts/:id(.:format)                     social/posts#update
+                                     DELETE /social/posts/:id(.:format)                     social/posts#destroy
                             workouts GET    /workouts(.:format)                             workouts#index
                                      POST   /workouts(.:format)                             workouts#create
                              workout GET    /workouts/:id(.:format)                         workouts#show

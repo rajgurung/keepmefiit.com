@@ -9,5 +9,7 @@
 #  updated_at :datetime         not null
 #
 
-class Category < ApplicationRecord
+module Social
+  class Category < ApplicationRecord
+  end
 end
