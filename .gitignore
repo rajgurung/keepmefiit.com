@@ -30,3 +30,5 @@
 
 /public/public/*
 /public/assets/*
+
+.env

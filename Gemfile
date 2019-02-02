@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-ruby "2.4.1"
+ruby "2.5.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'rails', '~> 5.0.0'
-gem 'rails', '~> 5.0', '>= 5.0.1'
+# gem 'rails', '~> 5.0', '>= 5.0.1'
+gem 'rails', '~> 5.2', '>= 5.2.2'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use Puma as the app server
@@ -35,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails' # Load env vars from .env
 end
 
 group :development do
@@ -77,7 +79,7 @@ gem 'bundler', '~> 1.11', '>= 1.11.2'
 
 gem 'bootstrap-select-rails', '~> 1.6', '>= 1.6.3'
 
-gem 'figaro'
+# gem 'figaro'
 
 gem 'carrierwave', '~> 1.0'
 
