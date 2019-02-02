@@ -1,6 +1,6 @@
 # KeepMeFiit - NextGenFitnessApp [![Codeship Status for rajgurung/blog](https://app.codeship.com/projects/ad73a930-cb69-0134-0ef4-56c43863b4c3/status?branch=master)](https://app.codeship.com/projects/199882) [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/rajgurung/keepmefiit)
 
-https://rajgurung.github.io/blog/
+https://rajgurung.github.io/keepmefiit.com/
 
 - Dashboard
 - Thrid Party API integration
