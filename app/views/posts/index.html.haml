@@ -6,7 +6,9 @@
         / #d3d3d3
         = image_tag('avatar-13.png', size: '80x80')
         %p.post-info
-          %b Raj Gurung
+          - @users.each do |user|
+            %b=user[:firstname]
+            %b=user[:lastname]
           %br/
           Enthusiast at keepmefiit
           %br/
