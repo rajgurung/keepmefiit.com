@@ -24,7 +24,7 @@ class Post < ApplicationRecord
           title: post[:title],
           content: post[:content].split(" ").first(20).join(" "),
           email: post.user.email,
-          created_at: post.created_at 
+          created_at: post.created_at
          }
       end
   end
