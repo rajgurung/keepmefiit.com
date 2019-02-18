@@ -6,7 +6,8 @@
         / #d3d3d3
         = image_tag('avatar-13.png', size: '80x80')
         %p.post-info
-          %b Raj Gurung
+          %b= @user.first_name
+          %b= @user.last_name
           %br/
           Enthusiast at keepmefiit
           %br/
@@ -47,5 +48,5 @@
   $('.vote').click(function () {
   $(this).toggleClass('on');
   });
-  
+
   </script>

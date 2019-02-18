@@ -6,15 +6,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts =  Post.all.order(created_at: :desc).collect do |post|
-                { 
-                  id: post.id,
-                  title: post[:title],
-                  content: post[:content].split(" ").first(20).join(" "),
-                  email: post.user.email,
-                  created_at: post.created_at 
-                }                  
-              end
+    @posts =  Post.user_posts(current_user)
+    @user = current_user
   end
 
   # GET /posts/1
