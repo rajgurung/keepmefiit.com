@@ -17,7 +17,7 @@ gem 'coderay'
 gem 'coffee-rails', '~> 4.2'    # Use CoffeeScript for .coffee assets and views
 gem 'devise'
 gem 'faker', '~> 1.6', '>= 1.6.3'
-# gem 'haml', '~> 5.0.0.beta.2'
+gem 'haml', '~> 5.0.0.beta.2'
 # gem 'haml2erb', '~> 0.2.1'
 gem 'jbuilder', '~> 2.5'        # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails'              # Use jquery as the JavaScript library
