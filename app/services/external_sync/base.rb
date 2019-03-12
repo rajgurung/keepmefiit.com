@@ -16,10 +16,10 @@ module ExternalSync
 
     def api
       {
-        apple_watch:   ENV.fetch('APPLE_WATCH'),
-        garmin_watch:  ENV.fetch('GARMIN_WATCH'),
-        fitbit_watch:  ENV.fetch('FITBIT_WATCH'),
-        samsung_watch: ENV.fetch('SAMSUNG_WATCH')
+        apple_watch_api:   ENV.fetch('APPLE_WATCH_API'),
+        garmin_watch_api:  ENV.fetch('GARMIN_WATCH_API'),
+        fitbit_watch_api:  ENV.fetch('FITBIT_WATCH_API'),
+        samsung_watch_api: ENV.fetch('SAMSUNG_WATCH_API')
       }.freeze
     end
 
