@@ -17,6 +17,7 @@ gem 'coderay'
 gem 'coffee-rails', '~> 4.2'    # Use CoffeeScript for .coffee assets and views
 gem 'devise'
 gem 'faker', '~> 1.6', '>= 1.6.3'
+gem 'faraday', '~> 0.15.4'
 gem 'haml', '~> 5.0.0.beta.2'
 # gem 'haml2erb', '~> 0.2.1'
 gem 'jbuilder', '~> 2.5'        # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -33,6 +34,7 @@ gem 'sass-rails', '~> 5.0'      # Use SCSS for stylesheets
 gem 'turbolinks', '~> 5'        # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
+gem 'virtus'
 
 group :development, :test do
   gem 'byebug', platform: :mri   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
