@@ -1,0 +1,1 @@
+# Garmin Sync Logic.
