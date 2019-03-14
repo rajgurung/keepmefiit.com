@@ -20,7 +20,8 @@
 class User < ApplicationRecord
 	has_many :user_workouts
 	has_many :workouts, through: :user_workouts
-
+  has_many :comments
+  has_many :PostHeart
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

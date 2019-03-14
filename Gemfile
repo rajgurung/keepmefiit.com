@@ -88,3 +88,5 @@ gem 'annotate'
 # gem 'erb2haml', :group => :development
 
 gem 'haml', '~> 5.0.0.beta.2'
+
+gem 'paranoia', '~> 2.1', '>= 2.1.5'
