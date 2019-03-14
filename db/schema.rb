@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(version: 2019_03_10_152829) do
     t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_posts_on_category_id", using: :btree
-    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
+    t.index ["category_id"], name: "index_posts_on_category_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "todos", force: :cascade do |t|
@@ -83,8 +83,8 @@ ActiveRecord::Schema.define(version: 2019_03_10_152829) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_user_workouts_on_user_id", using: :btree
-    t.index ["workout_id"], name: "index_user_workouts_on_workout_id", using: :btree
+    t.index ["user_id"], name: "index_user_workouts_on_user_id"
+    t.index ["workout_id"], name: "index_user_workouts_on_workout_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -102,8 +102,8 @@ ActiveRecord::Schema.define(version: 2019_03_10_152829) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
-    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "workout_categories", force: :cascade do |t|
@@ -120,7 +120,7 @@ ActiveRecord::Schema.define(version: 2019_03_10_152829) do
     t.datetime "updated_at", null: false
     t.integer "workout_category_id"
     t.json "pictograms"
-    t.index ["workout_category_id"], name: "index_workouts_on_workout_category_id", using: :btree
+    t.index ["workout_category_id"], name: "index_workouts_on_workout_category_id"
   end
 
   add_foreign_key "comments", "posts"

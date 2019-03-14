@@ -16,13 +16,31 @@ module ExternalSync
 
     def api
       {
-        apple_watch_api:   ENV.fetch('APPLE_WATCH_API'),
-        garmin_watch_api:  ENV.fetch('GARMIN_WATCH_API'),
-        fitbit_watch_api:  ENV.fetch('FITBIT_WATCH_API'),
-        samsung_watch_api: ENV.fetch('SAMSUNG_WATCH_API')
+        apple_watch_api_key:   ENV.fetch('APPLE_WATCH_API_KEY'),
+        garmin_watch_api_key:  ENV.fetch('GARMIN_WATCH_API_KEY'),
+        fitbit_watch_api_key:  ENV.fetch('FITBIT_WATCH_API_KEY'),
+        samsung_watch_api_key: ENV.fetch('SAMSUNG_WATCH_API_KEY')
       }.freeze
     end
 
-    def get; end
+    def steps
+      raise "construct on your concrete class, #{self.class}"
+    end
+
+    def run
+      raise "construct on your concrete class, #{self.class}"
+    end
+
+    def heart_beat
+      raise "construct on your concrete class, #{self.class}"
+    end
+
+    def sleep_pattern
+      raise "construct on your concrete class, #{self.class}"
+    end
+
+    def water_intake
+      raise "construct on your concrete class, #{self.class}"
+    end
   end
 end
