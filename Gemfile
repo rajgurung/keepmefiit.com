@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.5'        # Build JSON APIs with ease. Read more: https://
 gem 'jquery-rails'              # Use jquery as the JavaScript library
 gem 'pg', '~> 0.19.0'
 gem 'prettify', '~> 0.1.0', git: 'https://github.com/rajgng/prettify.git'
-gem 'puma', '~> 3.0'            # Use Puma as the app server
+gem 'puma', '~> 3.12'           # Use Puma as the app server
 gem 'rails', '~> 5.2', '>= 5.2.2'
 gem 'record_tag_helper', '~> 1.0'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
