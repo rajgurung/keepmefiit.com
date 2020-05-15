@@ -22,6 +22,7 @@ gem 'haml', '~> 5.0.0.beta.2'
 # gem 'haml2erb', '~> 0.2.1'
 gem 'jbuilder', '~> 2.5'        # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails'              # Use jquery as the JavaScript library
+gem 'paranoia', '~> 2.1', '>= 2.1.5' # when you called destroy on an Active Record object that it didn't actually destroy
 gem 'pg', '~> 0.19.0'
 gem 'prettify', '~> 0.1.0', git: 'https://github.com/rajgng/prettify.git'
 gem 'puma', '~> 3.12'           # Use Puma as the app server
@@ -54,5 +55,8 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+

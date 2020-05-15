@@ -14,6 +14,8 @@
 class Post < ApplicationRecord
   belongs_to :user
   belongs_to :category
+  has_many :comments
+  has_many :post_heart
 
   def self.user_posts(current_user)
     where(user: current_user)
@@ -24,7 +26,9 @@ class Post < ApplicationRecord
           title: post[:title],
           content: post[:content].split(" ").first(20).join(" "),
           email: post.user.email,
-          created_at: post.created_at
+          created_at: post.created_at,
+          comment_count: post.comments.count,
+          post_heart_count: post.post_heart.count
          }
       end
   end

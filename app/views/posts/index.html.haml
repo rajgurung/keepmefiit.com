@@ -34,10 +34,13 @@
               %div{:style => 'border-style: dotted none none none;border-width:1px;padding-top:4px'}
                 %span
                   = image_tag('green-heart.png', class: 'img-circle', size: '20x20')
-                  %span.complementary 1 k
+                  = post[:post_heart_count].to_s
                 %span.twelve_left_margin
                   = image_tag('blue-pulse.png', class: 'img-circle', size: '30x20')
                   %span.complementary 7 k
+                %span.twelve_left_margin
+                  = link_to image_tag('comments_img.png', class: 'img-circle', size: '30x20') +' ' + post[:comment_count].to_s, 'posts/' + post[:id].to_s
+
         / 01. End div
   .col-md-2
     .col-md-12.wrapper_colour{:style => 'border-radius:0px;'}
