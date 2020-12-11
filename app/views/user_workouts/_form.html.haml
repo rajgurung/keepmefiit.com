@@ -11,15 +11,21 @@
         - @user_workout.errors.full_messages.each do |msg|
           %li= msg
 
-  .row
-    .col-xs-4
+  .row.form-group
+    .col-xs-3{:style => "text-align:center;"}
       %span#load_image
-    .col-xs-4
-      %b SETS
-      %h2 3
-    .col-xs-4
-      %b REPS
-      %h2 12
+      = f.hidden_field :workout_id, value: 1
+    .col-xs-2.center_text
+      -#%h2.user_workout_input 30
+      = f.number_field :weight, class: 'user_workout_input center_text', placeholder: 'wts'
+    .col-xs-2.center_text
+      -#%h2.user_workout_input 3
+      = f.number_field :set, class: 'user_workout_input center_text', placeholder: 'sets'
+    .col-xs-2.center_text
+      -#%h2.user_workout_input 12
+      = f.number_field :rep, class: 'user_workout_input center_text', placeholder: 'reps'
+    .col-xs-3{:style => "text-align:center;bottom:0"}
+      = f.submit 'save', class: 'user_workout_save txt_color_grey'
 
   -#.form-group
   -#  = f.label :set, class: 'col-sm-2 control-label'
